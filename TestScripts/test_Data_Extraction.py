@@ -1,10 +1,11 @@
 import pandas as pd
+import pytest
 from sqlalchemy import create_engine
 import cx_Oracle
 import logging
 
-oracle_engine = create_engine("oracle+cx_oracle://system:admin@localhost:1521/xe")
-mysql_engine = create_engine("mysql+pymysql://root:Admin%40143@localhost:3308/stag_retaildwg")
+from CommonUtils.utils import verify_expected_file_data_vs_actual_db_data, verify_expected_db_data_vs_actual_db_data
+from Configuration.config import *
 
 logging.basicConfig(
     filename='LogFiles/Extraction.log',
@@ -14,9 +15,32 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-def test_DataExtrcation_from_sales_data_file_to_staging():
-    df_expected = pd.read_csv("TestData/sales_data_Linux_remote.csv")
+'''
+# This is optiomised 
+def test_DataExtraction_from_sales_data_file_to_staging():
+    logger.info(f"Test case execution for sales_data extarction has started....")
     query_actual = """select * from staging_sales"""
-    df_actual = pd.read_sql(query_actual,mysql_engine)
-    assert df_actual.equals(df_expected),"data extraction from sales file did not happen correctly"
+    verify_expected_file_data_vs_actual_db_data("TestData/sales_data_Linux_remote.csv","csv",query_actual,mysql_engine)
+    logger.info(f"Test case execution for sales_data extarction has completed....")
 
+
+def test_DataExtraction_from_product_data_file_to_staging():
+    # Please implement
+def test_DataExtraction_from_supplier_data_file_to_staging():
+    # Please implement
+
+def test_DataExtraction_from_inventory_data_file_to_staging():
+    # Please implement
+    
+'''
+# This is optiomised ( final test script to replicate other test scripts above)
+def test_DataExtraction_from_Oracle_stores_table_file_to_staging(connect_to_oracle_database,connect_to_mysql_database_staging):
+    logger.info(f"Test case execution for sales_data extarction has started....")
+    try:
+        query_expected = """select * from stores"""
+        query_actual = """select * from staging_stores"""
+        verify_expected_db_data_vs_actual_db_data(query_expected,connect_to_oracle_database,query_actual,connect_to_mysql_database_staging)
+    except Exception as e:
+        logger.error(f"test case Execution for stores data extrcation has failed{e}")
+        pytest.fail("test case Execution for stores data extrcation has failed")
+    logger.info(f"Test case execution for stores data extarction has completed....")

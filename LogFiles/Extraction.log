@@ -1,0 +1,59 @@
+2025-07-02 08:35:27,918-INFO-Oracle conenction is getting established
+2025-07-02 08:35:28,111-INFO-Oracle conenction has been established
+2025-07-02 08:35:28,111-INFO-mysql conenction is getting established
+2025-07-02 08:35:28,113-INFO-mysql conenction has been established
+2025-07-02 08:35:28,113-INFO-Test case execution for sales_data extarction has started....
+2025-07-02 08:35:28,127-INFO-The expected data in the file is :   store_id    store_name
+0         1       Walmart
+1         2        Target
+2         3      Best Buy
+3         4        Costco
+4         5    Home Depot
+5         6        Lowe's
+6         7   Apple Store
+7         8          IKEA
+8         9     Walgreens
+9        10  CVS Pharmacy
+2025-07-02 08:35:28,158-INFO-The actual data in the file is :   store_id    store_name
+0         1       Walmart
+1         2        Target
+2         3      Best Buy
+3         4        Costco
+4         5    Home Depot
+5         6        Lowe's
+6         7   Apple Store
+7         8          IKEA
+8         9     Walgreens
+9        10  CVS Pharmacy
+2025-07-02 08:35:28,159-INFO-Test case execution for stores data extarction has completed....
+2025-07-02 08:35:28,160-INFO-Oracle conenction has been closed
+2025-07-02 08:36:30,735-INFO-Oracle conenction is getting established
+2025-07-02 08:36:30,912-INFO-Oracle conenction has been established
+2025-07-02 08:36:30,912-INFO-mysql conenction is getting established
+2025-07-02 08:36:30,933-INFO-mysql conenction has been established
+2025-07-02 08:36:30,933-INFO-Test case execution for sales_data extarction has started....
+2025-07-02 08:36:30,947-INFO-The expected data in the file is :   store_id    store_name
+0         1       Walmart
+1         2        Target
+2         3      Best Buy
+3         4        Costco
+4         5    Home Depot
+5         6        Lowe's
+6         7   Apple Store
+7         8          IKEA
+8         9     Walgreens
+9        10  CVS Pharmacy
+2025-07-02 08:36:30,954-INFO-The actual data in the file is :   store_id    store_name
+0         1       Walmart
+1         2        Target
+2         3      Best Buy
+3         4        Costco
+4         5    Home Depot
+5         6        Lowe's
+6         7   Apple Store
+7         8          IKEA
+8         9     Walgreens
+9        10  CVS Pharmacy
+2025-07-02 08:36:30,954-INFO-Test case execution for stores data extarction has completed....
+2025-07-02 08:36:30,955-INFO-mysql conenction has been closed
+2025-07-02 08:36:30,955-INFO-Oracle conenction has been closed
