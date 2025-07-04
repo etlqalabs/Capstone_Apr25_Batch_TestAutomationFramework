@@ -1,3 +1,4 @@
-1. Complete the remaining 4 test scripts :
-  a) 3 files to staging my sql comparision
-  b) stores( oracle ) to mysql staging
+1. Data Extraction test cases  for remaining checks
+2. Data Loading test cases  for remaining checks which are on skip:
+   fix the issue with data types
+3. Add some test cases for data types checks in extract, transfrom or load test

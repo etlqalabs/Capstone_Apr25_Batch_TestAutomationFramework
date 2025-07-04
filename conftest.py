@@ -33,3 +33,13 @@ def connect_to_mysql_database_staging():
     yield mysql_engine_staging
     mysql_engine_staging.close()
     logger.info("mysql conenction has been closed")
+
+@pytest.fixture()
+def connect_to_mysql_database_target():
+    logger.info("mysql conenction is getting established")
+    mysql_engine_target = create_engine(
+        f"mysql+pymysql://{MYSQL_USER}:{MYSQL_PASSWORD}@{MYSQL_HOST}:{MYSQL_PORT}/{MYSQL_DATABASE_TARGET}").connect()
+    logger.info("mysql conenction has been established")
+    yield mysql_engine_target
+    mysql_engine_target.close()
+    logger.info("mysql conenction has been closed")
