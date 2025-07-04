@@ -6,7 +6,6 @@ import logging
 
 from CommonUtils.utils import verify_expected_file_data_vs_actual_db_data, verify_expected_db_data_vs_actual_db_data
 from Configuration.config import *
-
 logging.basicConfig(
     filename='LogFiles/Extraction.log',
     filemode = 'a',
@@ -27,7 +26,7 @@ def test_DataExtraction_from_sales_data_file_to_staging():
 def test_DataExtraction_from_product_data_file_to_staging():
     # Please implement
 def test_DataExtraction_from_supplier_data_file_to_staging():
-    # Please implement
+    # Please implement the code
 
 def test_DataExtraction_from_inventory_data_file_to_staging():
     # Please implement
