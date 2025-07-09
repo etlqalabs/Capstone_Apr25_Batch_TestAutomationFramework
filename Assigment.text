@@ -2,3 +2,9 @@
 2. Data Loading test cases  for remaining checks which are on skip:
    fix the issue with data types
 3. Add some test cases for data types checks in extract, transfrom or load test case
+
+Assignment from 9th Jul class:
+1. Complete all the dq tests for each files ( 3 files )
+2. Create similar functions to perform dq checks on database tables which should be
+   generic to accept any database ( mysql, oracle etc..)
+3. create dq tests on table tables ( all 4 targets ) to check data quality issue
