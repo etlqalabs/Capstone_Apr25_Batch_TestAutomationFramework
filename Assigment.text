@@ -3,8 +3,11 @@
    fix the issue with data types
 3. Add some test cases for data types checks in extract, transfrom or load test case
 
-Assignment from 9th Jul class:
+Assignment from last class:
 1. Complete all the dq tests for each files ( 3 files )
 2. Create similar functions to perform dq checks on database tables which should be
    generic to accept any database ( mysql, oracle etc..)
 3. create dq tests on table tables ( all 4 targets ) to check data quality issue
+4. Add 3 test cases for referential integrity test ( foreign key and primary check between target
+   fact_sales table and staging_product,staging_stores,staging_sales )
+
