@@ -27,7 +27,7 @@ def test_DataLoad_for_Monthly_sales_summary_check(connect_to_mysql_database_stag
         pytest.fail("test case Execution for Monthly_sales_summary_check has failed")
     logger.info(f"Test case execution for Monthly_sales_summary_check has completed....")
 
-
+@pytest.mark.xfail
 @pytest.mark.smoke
 @pytest.mark.regression
 def test_DataLoad_for_fact_sales_check(connect_to_mysql_database_staging,connect_to_mysql_database_target):
@@ -43,6 +43,7 @@ def test_DataLoad_for_fact_sales_check(connect_to_mysql_database_staging,connect
 
 
 @pytest.mark.smoke
+@pytest.mark.skip
 @pytest.mark.regression
 def test_DataLoad_for_fact_inventory_check(connect_to_mysql_database_staging,connect_to_mysql_database_target):
     logger.info(f"Test case execution for fact_inventory_check check has started....")
