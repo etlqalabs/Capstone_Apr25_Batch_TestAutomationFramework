@@ -10,4 +10,7 @@ Assignment from last class:
 3. create dq tests on table tables ( all 4 targets ) to check data quality issue
 4. Add 3 test cases for referential integrity test ( foreign key and primary check between target
    fact_sales table and staging_product,staging_stores,staging_sales )
-
+5. Create jenkins job to :
+a) Run at sepcified day and time
+b) Run whenever there is a new code pushed in to GITHub
+c) Run when upstream job is successfully completed
