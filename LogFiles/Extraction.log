@@ -7576,3 +7576,45 @@ INFO     conftest:conftest.py:25 Oracle conenction has been closed
 41        20  2024-09-20   19.5         9        175.5         110   Kindle Paperwhite         9    Walgreens
 2025-07-11 08:01:04,871-INFO-Test case execution for  Joiner_sales_products_stores_data_check  has completed....
 2025-07-11 08:01:04,873-INFO-mysql conenction has been closed
+2025-07-11 08:30:19,680-INFO-Found credentials in shared credentials file: ~/.aws/credentials
+2025-07-11 08:30:20,351-INFO-mysql conenction is getting established
+2025-07-11 08:30:20,366-INFO-mysql conenction has been established
+2025-07-11 08:30:20,367-INFO-mysql conenction is getting established
+2025-07-11 08:30:20,384-INFO-mysql conenction has been established
+2025-07-11 08:30:20,424-INFO-mysql conenction has been closed
+2025-07-11 08:30:20,424-INFO-mysql conenction has been closed
+2025-07-11 08:31:52,563-INFO-Found credentials in shared credentials file: ~/.aws/credentials
+2025-07-11 08:31:53,154-INFO-mysql conenction is getting established
+2025-07-11 08:31:53,165-INFO-mysql conenction has been established
+2025-07-11 08:31:53,165-INFO-mysql conenction is getting established
+2025-07-11 08:31:53,180-INFO-mysql conenction has been established
+2025-07-11 08:31:53,228-INFO-mysql conenction has been closed
+2025-07-11 08:31:53,229-INFO-mysql conenction has been closed
+2025-07-11 08:33:14,054-INFO-Found credentials in shared credentials file: ~/.aws/credentials
+2025-07-11 08:33:14,886-INFO-mysql conenction is getting established
+2025-07-11 08:33:14,899-INFO-mysql conenction has been established
+2025-07-11 08:33:14,899-INFO-mysql conenction is getting established
+2025-07-11 08:33:14,916-INFO-mysql conenction has been established
+2025-07-11 08:33:14,959-INFO-mysql conenction has been closed
+2025-07-11 08:33:14,960-INFO-mysql conenction has been closed
+2025-07-11 08:33:30,877-INFO-Found credentials in shared credentials file: ~/.aws/credentials
+2025-07-11 08:33:31,574-INFO-mysql conenction is getting established
+2025-07-11 08:33:31,583-INFO-mysql conenction has been established
+2025-07-11 08:33:31,584-INFO-mysql conenction is getting established
+2025-07-11 08:33:31,601-INFO-mysql conenction has been established
+2025-07-11 08:33:31,629-INFO-mysql conenction has been closed
+2025-07-11 08:33:31,629-INFO-mysql conenction has been closed
+2025-07-11 08:36:32,521-INFO-Found credentials in shared credentials file: ~/.aws/credentials
+2025-07-11 08:36:33,100-INFO-mysql conenction is getting established
+2025-07-11 08:36:33,110-INFO-mysql conenction has been established
+2025-07-11 08:36:33,111-INFO-mysql conenction is getting established
+2025-07-11 08:36:33,126-INFO-mysql conenction has been established
+2025-07-11 08:36:33,156-INFO-mysql conenction has been closed
+2025-07-11 08:36:33,156-INFO-mysql conenction has been closed
+2025-07-11 08:38:28,151-INFO-Found credentials in shared credentials file: ~/.aws/credentials
+2025-07-11 08:38:28,685-INFO-mysql conenction is getting established
+2025-07-11 08:38:28,708-INFO-mysql conenction has been established
+2025-07-11 08:38:28,709-INFO-mysql conenction is getting established
+2025-07-11 08:38:28,725-INFO-mysql conenction has been established
+2025-07-11 08:38:29,159-INFO-mysql conenction has been closed
+2025-07-11 08:38:29,159-INFO-mysql conenction has been closed
