@@ -15,16 +15,19 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# This is optiomised 
+
+@pytest.mark.smoke
+@pytest.mark.regression
 def test_DataExtraction_from_sales_data_file_to_staging(connect_to_mysql_database_staging):
     logger.info(f"Test case execution for sales_data extarction has started....")
-    getDataFromLinuxBox()
+    #getDataFromLinuxBox()
     query_actual = """select * from staging_sales"""
     verify_expected_file_data_vs_actual_db_data("TestData/sales_data_Linux_remote.csv","csv",query_actual,connect_to_mysql_database_staging)
     logger.info(f"Test case execution for sales_data extarction has completed....")
 
 
 
+@pytest.mark.smoke
 def test_DataExtraction_from_product_data_file_to_staging(connect_to_mysql_database_staging):
     logger.info(f"Test case execution for product_data extarction has started....")
     try:
@@ -38,9 +41,7 @@ def test_DataExtraction_from_product_data_file_to_staging(connect_to_mysql_datab
     logger.info(f"Test case execution for stores data extarction has completed....")
 
     
-    
-    
-    
+
 '''
 def test_DataExtraction_from_supplier_data_file_to_staging():
     # Please implement the code

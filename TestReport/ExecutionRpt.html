@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title id="head-title">ExecutionRpt.html</title>
+      <link href="assets\style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <h1 id="title">ExecutionRpt.html</h1>
+    <p>Report generated on 11-Jul-2025 at 07:39:52 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a>
+        v4.1.1</p>
+    <div id="environment-header">
+      <h2>Environment</h2>
+    </div>
+    <table id="environment"></table>
+    <!-- TEMPLATES -->
+      <template id="template_environment_row">
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </template>
+    <template id="template_results-table__body--empty">
+      <tbody class="results-table-row">
+        <tr id="not-found-message">
+          <td colspan="4">No results found. Check the filters.</th>
+        </tr>
+    </template>
+    <template id="template_results-table__tbody">
+      <tbody class="results-table-row">
+        <tr class="collapsible">
+        </tr>
+        <tr class="extras-row">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media">
+              <div class="media-container">
+                  <div class="media-container__nav--left"><</div>
+                  <div class="media-container__viewport">
+                    <img src="" />
+                    <video controls>
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">></div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log"></div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </template>
+    <!-- END TEMPLATES -->
+    <div class="summary">
+      <div class="summary__data">
+        <h2>Summary</h2>
+        <div class="additional-summary prefix">
+        </div>
+        <p class="run-count">12 tests took 00:00:02.</p>
+        <p class="filter">(Un)check the boxes to filter the results.</p>
+        <div class="summary__reload">
+          <div class="summary__reload__button hidden" onclick="location.reload()">
+            <div>There are still tests running. <br />Reload this page to get the latest results!</div>
+          </div>
+        </div>
+        <div class="summary__spacer"></div>
+        <div class="controls">
+          <div class="filters">
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="failed" />
+            <span class="failed">3 Failed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="passed" />
+            <span class="passed">9 Passed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="skipped" disabled/>
+            <span class="skipped">0 Skipped,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xfailed" disabled/>
+            <span class="xfailed">0 Expected failures,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xpassed" disabled/>
+            <span class="xpassed">0 Unexpected passes,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="error" disabled/>
+            <span class="error">0 Errors,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="rerun" disabled/>
+            <span class="rerun">0 Reruns</span>
+          </div>
+          <div class="collapse">
+            <button id="show_all_details">Show all details</button>&nbsp;/&nbsp;<button id="hide_all_details">Hide all details</button>
+          </div>
+        </div>
+      </div>
+      <div class="additional-summary summary">
+      </div>
+      <div class="additional-summary postfix">
+      </div>
+    </div>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable" data-column-type="result">Result</th>
+          <th class="sortable" data-column-type="testId">Test</th>
+          <th class="sortable" data-column-type="duration">Duration</th>
+          <th>Links</th>
+        </tr>
+      </thead>
+    </table>
+  </body>
+  <footer>
+    <div id="data-container" data-jsonblob="{&#34;environment&#34;: {&#34;Python&#34;: &#34;3.10.1&#34;, &#34;Platform&#34;: &#34;Windows-10-10.0.26100-SP0&#34;, &#34;Packages&#34;: {&#34;pytest&#34;: &#34;8.3.4&#34;, &#34;pluggy&#34;: &#34;1.5.0&#34;}, &#34;Plugins&#34;: {&#34;anyio&#34;: &#34;4.9.0&#34;, &#34;Faker&#34;: &#34;37.4.0&#34;, &#34;ast-transformer&#34;: &#34;1.0.3&#34;, &#34;html&#34;: &#34;4.1.1&#34;, &#34;metadata&#34;: &#34;3.1.1&#34;, &#34;order&#34;: &#34;1.3.0&#34;, &#34;ordering&#34;: &#34;0.6&#34;, &#34;rerunfailures&#34;: &#34;15.1&#34;, &#34;soft-assertions&#34;: &#34;0.1.2&#34;, &#34;xdist&#34;: &#34;3.7.0&#34;}, &#34;JAVA_HOME&#34;: &#34;C:\\Users\\hetur\\.jdks\\openjdk-21.0.2&#34;}, &#34;tests&#34;: {&#34;TestScripts/test_Data_Extraction.py::test_DataExtraction_from_sales_data_file_to_staging&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;TestScripts/test_Data_Extraction.py::test_DataExtraction_from_sales_data_file_to_staging&#34;, &#34;duration&#34;: &#34;437 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;TestScripts/test_Data_Extraction.py::test_DataExtraction_from_sales_data_file_to_staging&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;437 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log setup ------------------------------\nINFO     conftest:conftest.py:29 mysql conenction is getting established\nINFO     conftest:conftest.py:32 mysql conenction has been established\n\n------------------------------ Captured log call -------------------------------\nINFO     TestScripts.test_Data_Extraction:test_Data_Extraction.py:22 Test case execution for sales_data extarction has started....\nINFO     CommonUtils.utils:utils.py:119 The expected data in the file is :    sales_id  product_id  store_id  quantity  price   sale_date region\n0          1         101         1        10   15.0  2024-09-01   High\n1          2         102         1         5   25.0  2024-09-01    Low\n2          3         103         2         7   20.0  2024-09-02   High\n3          4         104         2         3   30.0  2024-09-03    Low\n4          5         105         1        12   12.0  2024-09-05   High\n5          6         106         3         8   18.0  2024-09-06    Low\n6          7         107         1         4   22.0  2024-09-07   High\n7          8         108         2         6   24.0  2024-09-08    Low\n8          9         109         3        11   19.0  2024-09-09   High\n9         10         110         4         9   17.0  2024-09-10    Low\n10        11         101         4        15   14.0  2024-09-11   High\n11        12         102         5         9   27.0  2024-09-12    Low\n12        13         103         6        10   22.0  2024-09-13   High\n13        14         104         7         8   31.0  2024-09-14    Low\n14        15         105         4        12   11.0  2024-09-15   High\n15        16         106         5         5   23.0  2024-09-16    Low\n16        17         107         6         3   26.0  2024-09-17   High\n17        18         108         7         6   28.0  2024-09-18    Low\n18        19         109         8        11   20.0  2024-09-19   High\n19        20         110         9         9   19.5  2024-09-20    Low\n20        21         101         1        14   15.5  2024-09-21   High\n21        22         102         2         8   22.0  2024-09-22    Low\n22        23         103         3         7   18.0  2024-09-23   High\n23        24         104         4         6   25.0  2024-09-24    Low\n24        25         105         2        12   13.5  2024-09-25   High\n25        26         106         3         5   21.0  2024-09-26    Low\n26        27         107         1        10   19.0  2024-09-27   High\n27        28         108         5         6   27.0  2024-09-28    Low\n28        29         109         6         9   24.0  2024-09-29   High\n29        30         110         7         7   23.5  2024-09-30    Low\n30        31         101         4        13   14.5  2024-10-01   High\n31        32         102         5         6   29.0  2024-10-02    Low\n32        33         103         6         8   21.0  2024-10-03   High\n33        34         104         7         5   30.0  2024-10-04    Low\n34        35         105         4         7   15.0  2024-10-05   High\n35        36         106         5         3   25.0  2024-10-06    Low\n36        37         107         6        12   18.0  2024-10-07   High\n37        38         108         7         9   20.0  2024-10-08    Low\n38        39         109         8        10   22.0  2024-10-09   High\n39        40         110         9         6   26.0  2024-10-10    Low\n40        41         101         3         5   15.0  2024-10-11   High\n41        42         102         4         4   20.0  2024-10-12    Low\n42        43         103         5         9   19.0  2024-10-13   High\n43        44         104         6         7   28.0  2024-10-14    Low\n44        45         105         7        10   25.0  2024-10-15   High\n45        46         106         8         8   22.5  2024-10-16    Low\n46        47         107         9         6   24.0  2024-10-17   High\n47        48         108         1         3   27.0  2024-10-18    Low\n48        49         109         2        11   18.5  2024-10-19   High\n49        50         110         3        12   21.0  2024-10-20    Low\n50        51         101         1        10   15.0  2024-08-01   High\n51        52         101         1         5   25.0  2024-08-01    Low\n52        53         101         2         7   20.0  2023-09-02   High\n53        54         101         2         3   30.0  2023-09-03    Low\n54        55         105         1        12   12.0  2024-09-05   High\n55        56         106         3         8   18.0  2024-09-06    Low\n56        57         107         1         4   22.0  2024-09-07   High\n57        58         108         2         6   24.0  2024-09-08    Low\n58        59         109         3        11   19.0  2024-09-09   High\n59        60         110         4         9   17.0  2024-09-10    Low\nINFO     CommonUtils.utils:utils.py:121 The actual data in the file is :    sales_id  product_id  store_id  quantity  price   sale_date region\n0          1         101         1        10   15.0  2024-09-01   High\n1          2         102         1         5   25.0  2024-09-01    Low\n2          3         103         2         7   20.0  2024-09-02   High\n3          4         104         2         3   30.0  2024-09-03    Low\n4          5         105         1        12   12.0  2024-09-05   High\n5          6         106         3         8   18.0  2024-09-06    Low\n6          7         107         1         4   22.0  2024-09-07   High\n7          8         108         2         6   24.0  2024-09-08    Low\n8          9         109         3        11   19.0  2024-09-09   High\n9         10         110         4         9   17.0  2024-09-10    Low\n10        11         101         4        15   14.0  2024-09-11   High\n11        12         102         5         9   27.0  2024-09-12    Low\n12        13         103         6        10   22.0  2024-09-13   High\n13        14         104         7         8   31.0  2024-09-14    Low\n14        15         105         4        12   11.0  2024-09-15   High\n15        16         106         5         5   23.0  2024-09-16    Low\n16        17         107         6         3   26.0  2024-09-17   High\n17        18         108         7         6   28.0  2024-09-18    Low\n18        19         109         8        11   20.0  2024-09-19   High\n19        20         110         9         9   19.5  2024-09-20    Low\n20        21         101         1        14   15.5  2024-09-21   High\n21        22         102         2         8   22.0  2024-09-22    Low\n22        23         103         3         7   18.0  2024-09-23   High\n23        24         104         4         6   25.0  2024-09-24    Low\n24        25         105         2        12   13.5  2024-09-25   High\n25        26         106         3         5   21.0  2024-09-26    Low\n26        27         107         1        10   19.0  2024-09-27   High\n27        28         108         5         6   27.0  2024-09-28    Low\n28        29         109         6         9   24.0  2024-09-29   High\n29        30         110         7         7   23.5  2024-09-30    Low\n30        31         101         4        13   14.5  2024-10-01   High\n31        32         102         5         6   29.0  2024-10-02    Low\n32        33         103         6         8   21.0  2024-10-03   High\n33        34         104         7         5   30.0  2024-10-04    Low\n34        35         105         4         7   15.0  2024-10-05   High\n35        36         106         5         3   25.0  2024-10-06    Low\n36        37         107         6        12   18.0  2024-10-07   High\n37        38         108         7         9   20.0  2024-10-08    Low\n38        39         109         8        10   22.0  2024-10-09   High\n39        40         110         9         6   26.0  2024-10-10    Low\n40        41         101         3         5   15.0  2024-10-11   High\n41        42         102         4         4   20.0  2024-10-12    Low\n42        43         103         5         9   19.0  2024-10-13   High\n43        44         104         6         7   28.0  2024-10-14    Low\n44        45         105         7        10   25.0  2024-10-15   High\n45        46         106         8         8   22.5  2024-10-16    Low\n46        47         107         9         6   24.0  2024-10-17   High\n47        48         108         1         3   27.0  2024-10-18    Low\n48        49         109         2        11   18.5  2024-10-19   High\n49        50         110         3        12   21.0  2024-10-20    Low\n50        51         101         1        10   15.0  2024-08-01   High\n51        52         101         1         5   25.0  2024-08-01    Low\n52        53         101         2         7   20.0  2023-09-02   High\n53        54         101         2         3   30.0  2023-09-03    Low\n54        55         105         1        12   12.0  2024-09-05   High\n55        56         106         3         8   18.0  2024-09-06    Low\n56        57         107         1         4   22.0  2024-09-07   High\n57        58         108         2         6   24.0  2024-09-08    Low\n58        59         109         3        11   19.0  2024-09-09   High\n59        60         110         4         9   17.0  2024-09-10    Low\nINFO     TestScripts.test_Data_Extraction:test_Data_Extraction.py:26 Test case execution for sales_data extarction has completed....\n\n---------------------------- Captured log teardown -----------------------------\nINFO     conftest:conftest.py:35 mysql conenction has been closed&#34;}], &#34;TestScripts/test_Data_Extraction.py::test_DataExtraction_from_product_data_file_to_staging&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;TestScripts/test_Data_Extraction.py::test_DataExtraction_from_product_data_file_to_staging&#34;, &#34;duration&#34;: &#34;00:00:01&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;TestScripts/test_Data_Extraction.py::test_DataExtraction_from_product_data_file_to_staging&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:01&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;connect_to_mysql_database_staging = &amp;lt;sqlalchemy.engine.base.Connection object at 0x0000025FCA4783D0&amp;gt;\n\n    @pytest.mark.smoke\n    def test_DataExtraction_from_product_data_file_to_staging(connect_to_mysql_database_staging):\n        logger.info(f&amp;quot;Test case execution for product_data extarction has started....&amp;quot;)\n        try:\n            bucket_name = &amp;quot;bucket-apr-weekdays&amp;quot;\n            file_key = &amp;quot;product_data/product_data.csv&amp;quot;\n            query_actual = &amp;quot;&amp;quot;&amp;quot;select * from staging_product&amp;quot;&amp;quot;&amp;quot;\n&amp;gt;           verify_expected_as_S3_to_actual_as_db(bucket_name,file_key,connect_to_mysql_database_staging,query_actual)\n\nTestScripts\\test_Data_Extraction.py:37: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nbucket_name = &amp;#x27;bucket-apr-weekdays&amp;#x27;, file_key = &amp;#x27;product_data/product_data.csv&amp;#x27;\ndb_engine_actual = &amp;lt;sqlalchemy.engine.base.Connection object at 0x0000025FCA4783D0&amp;gt;, query_actual = &amp;#x27;select * from staging_product&amp;#x27;\n\n    def verify_expected_as_S3_to_actual_as_db(bucket_name,file_key,db_engine_actual,query_actual):\n        # The desired path and file name in the S3 bucket\n        # Call the function to read the CSV file from S3\n        df_expected = read_csv_from_s3(bucket_name, file_key)\n        logger.info(f&amp;quot;The expected data is the database is: {df_expected}&amp;quot;)\n        df_actual = pd.read_sql(query_actual, db_engine_actual)\n        logger.info(f&amp;quot;The actual data is the database is: {df_actual}&amp;quot;)\n&amp;gt;       assert df_actual.equals(df_expected), f&amp;quot;expected does not match with expected data in{query_actual}&amp;quot;\nE       AssertionError: expected does not match with expected data inselect * from staging_product\n\nCommonUtils\\utils.py:196: AssertionError\n\nDuring handling of the above exception, another exception occurred:\n\nconnect_to_mysql_database_staging = &amp;lt;sqlalchemy.engine.base.Connection object at 0x0000025FCA4783D0&amp;gt;\n\n    @pytest.mark.smoke\n    def test_DataExtraction_from_product_data_file_to_staging(connect_to_mysql_database_staging):\n        logger.info(f&amp;quot;Test case execution for product_data extarction has started....&amp;quot;)\n        try:\n            bucket_name = &amp;quot;bucket-apr-weekdays&amp;quot;\n            file_key = &amp;quot;product_data/product_data.csv&amp;quot;\n            query_actual = &amp;quot;&amp;quot;&amp;quot;select * from staging_product&amp;quot;&amp;quot;&amp;quot;\n            verify_expected_as_S3_to_actual_as_db(bucket_name,file_key,connect_to_mysql_database_staging,query_actual)\n        except Exception as e:\n                logger.error(f&amp;quot;test case Execution for stores data extrcation has failed{e}&amp;quot;)\n&amp;gt;               pytest.fail(&amp;quot;test case Execution for stores data extrcation has failed&amp;quot;)\nE               Failed: test case Execution for stores data extrcation has failed\n\nTestScripts\\test_Data_Extraction.py:40: Failed\n\n------------------------------ Captured log setup ------------------------------\nINFO     conftest:conftest.py:29 mysql conenction is getting established\nINFO     conftest:conftest.py:32 mysql conenction has been established\n\n------------------------------ Captured log call -------------------------------\nINFO     TestScripts.test_Data_Extraction:test_Data_Extraction.py:32 Test case execution for product_data extarction has started....\nINFO     CommonUtils.utils:utils.py:193 The expected data is the database is: None\nINFO     CommonUtils.utils:utils.py:195 The actual data is the database is:    product_id        product_name     category  price  stock_quantity    brand  rating\n0         101           iPhone 15  Smartphones    999              50    Apple     4.8\n1         102  Samsung Galaxy S23  Smartphones    899              75  Samsung     4.7\n2         103         Dell XPS 13      Laptops   1200              30     Dell     4.6\n3         104      MacBook Pro 14      Laptops   2000              25    Apple     4.9\n4         105     Sony WH-1000XM5   Headphones    350             100     Sony     4.7\n5         106       Nike Air Zoom     Sneakers    120             200     Nike     4.5\n6         107      Samsung 55&amp;quot; TV  Electronics    700              40  Samsung     4.4\n7         108    Philips Hue Bulb   Smart Home     50             500  Philips     4.8\n8         109     Fitbit Charge 5    Wearables    150             150   Fitbit     4.6\n9         110   Kindle Paperwhite     eReaders    130              80   Amazon     4.7\nERROR    TestScripts.test_Data_Extraction:test_Data_Extraction.py:39 test case Execution for stores data extrcation has failedexpected does not match with expected data inselect * from staging_product\n\n---------------------------- Captured log teardown -----------------------------\nINFO     conftest:conftest.py:35 mysql conenction has been closed&#34;}], &#34;TestScripts/test_Data_Loading.py::test_DataLoad_for_Monthly_sales_summary_check&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;TestScripts/test_Data_Loading.py::test_DataLoad_for_Monthly_sales_summary_check&#34;, &#34;duration&#34;: &#34;62 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;TestScripts/test_Data_Loading.py::test_DataLoad_for_Monthly_sales_summary_check&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;62 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log setup ------------------------------\nINFO     conftest:conftest.py:29 mysql conenction is getting established\nINFO     conftest:conftest.py:32 mysql conenction has been established\nINFO     conftest:conftest.py:39 mysql conenction is getting established\nINFO     conftest:conftest.py:42 mysql conenction has been established\n\n------------------------------ Captured log call -------------------------------\nINFO     TestScripts.test_Data_Loading:test_Data_Loading.py:20 Test case execution for Monthly_sales_summary_check check has started....\nINFO     CommonUtils.utils:utils.py:141 The expected data in the file is :    product_id  month  year  total_sales\n0          101      9  2024        427.0\n1          101     10  2024        263.5\n2          102      9  2024        419.0\n3          102     10  2024        254.0\n4          103      9  2024        346.0\n5          103     10  2024        339.0\n6          104      9  2024        398.0\n7          104     10  2024        346.0\n8          105      9  2024        294.0\n9          105     10  2024        355.0\n10         106      9  2024        220.0\n11         106     10  2024        255.0\n12         107      9  2024        268.0\n13         107     10  2024        360.0\n14         108      9  2024        330.0\n15         108     10  2024        261.0\n16         109      9  2024        436.0\n17         109     10  2024        423.5\n18         110      9  2024        646.0\n19         110     10  2024        408.0\nINFO     CommonUtils.utils:utils.py:143 The actual data in the file is :    product_id  month  year  total_sales\n0          101      9  2024        427.0\n1          101     10  2024        263.5\n2          102      9  2024        419.0\n3          102     10  2024        254.0\n4          103      9  2024        346.0\n5          103     10  2024        339.0\n6          104      9  2024        398.0\n7          104     10  2024        346.0\n8          105      9  2024        294.0\n9          105     10  2024        355.0\n10         106      9  2024        220.0\n11         106     10  2024        255.0\n12         107      9  2024        268.0\n13         107     10  2024        360.0\n14         108      9  2024        330.0\n15         108     10  2024        261.0\n16         109      9  2024        436.0\n17         109     10  2024        423.5\n18         110      9  2024        646.0\n19         110     10  2024        408.0\nINFO     TestScripts.test_Data_Loading:test_Data_Loading.py:28 Test case execution for Monthly_sales_summary_check has completed....\n\n---------------------------- Captured log teardown -----------------------------\nINFO     conftest:conftest.py:45 mysql conenction has been closed\nINFO     conftest:conftest.py:35 mysql conenction has been closed&#34;}], &#34;TestScripts/test_Data_Loading.py::test_DataLoad_for_fact_sales_check&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;TestScripts/test_Data_Loading.py::test_DataLoad_for_fact_sales_check&#34;, &#34;duration&#34;: &#34;77 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;TestScripts/test_Data_Loading.py::test_DataLoad_for_fact_sales_check&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;77 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;connect_to_mysql_database_staging = &amp;lt;sqlalchemy.engine.base.Connection object at 0x0000025FCA47A0E0&amp;gt;\nconnect_to_mysql_database_target = &amp;lt;sqlalchemy.engine.base.Connection object at 0x0000025FCA47AE90&amp;gt;\n\n    @pytest.mark.smoke\n    @pytest.mark.regression\n    def test_DataLoad_for_fact_sales_check(connect_to_mysql_database_staging,connect_to_mysql_database_target):\n        logger.info(f&amp;quot;Test case execution for fact_sales_check check has started....&amp;quot;)\n        try:\n            query_expected = &amp;quot;&amp;quot;&amp;quot;select * from sales_with_details&amp;quot;&amp;quot;&amp;quot;\n            query_actual = &amp;quot;&amp;quot;&amp;quot;select * from fact_sales&amp;quot;&amp;quot;&amp;quot;\n&amp;gt;           verify_expected_db_data_vs_actual_db_data(query_expected,connect_to_mysql_database_staging,query_actual,connect_to_mysql_database_target)\n\nTestScripts\\test_Data_Loading.py:38: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nquery_expected = &amp;#x27;select * from sales_with_details&amp;#x27;\ndb_engine_expected = &amp;lt;sqlalchemy.engine.base.Connection object at 0x0000025FCA47A0E0&amp;gt;, query_actual = &amp;#x27;select * from fact_sales&amp;#x27;\ndb_engine_actual = &amp;lt;sqlalchemy.engine.base.Connection object at 0x0000025FCA47AE90&amp;gt;\n\n    def verify_expected_db_data_vs_actual_db_data(query_expected,db_engine_expected,query_actual,db_engine_actual):\n        df_expected = pd.read_sql(query_expected, db_engine_expected)\n        logger.info(f&amp;quot;The expected data in the file is :{df_expected}&amp;quot;)\n        df_actual = pd.read_sql(query_actual,db_engine_actual)\n        logger.info(f&amp;quot;The actual data in the file is :{df_actual}&amp;quot;)\n&amp;gt;       assert df_actual.equals(df_expected),f&amp;quot;expected data from query {query_expected} does not match the actual data from query {query_actual}&amp;quot;\nE       AssertionError: expected data from query select * from sales_with_details does not match the actual data from query select * from fact_sales\n\nCommonUtils\\utils.py:144: AssertionError\n\nDuring handling of the above exception, another exception occurred:\n\nconnect_to_mysql_database_staging = &amp;lt;sqlalchemy.engine.base.Connection object at 0x0000025FCA47A0E0&amp;gt;\nconnect_to_mysql_database_target = &amp;lt;sqlalchemy.engine.base.Connection object at 0x0000025FCA47AE90&amp;gt;\n\n    @pytest.mark.smoke\n    @pytest.mark.regression\n    def test_DataLoad_for_fact_sales_check(connect_to_mysql_database_staging,connect_to_mysql_database_target):\n        logger.info(f&amp;quot;Test case execution for fact_sales_check check has started....&amp;quot;)\n        try:\n            query_expected = &amp;quot;&amp;quot;&amp;quot;select * from sales_with_details&amp;quot;&amp;quot;&amp;quot;\n            query_actual = &amp;quot;&amp;quot;&amp;quot;select * from fact_sales&amp;quot;&amp;quot;&amp;quot;\n            verify_expected_db_data_vs_actual_db_data(query_expected,connect_to_mysql_database_staging,query_actual,connect_to_mysql_database_target)\n        except Exception as e:\n            logger.error(f&amp;quot;test case Execution for fact_sales_check has failed{e}&amp;quot;)\n&amp;gt;           pytest.fail(&amp;quot;test case Execution for fact_sales_check has failed&amp;quot;)\nE           Failed: test case Execution for fact_sales_check has failed\n\nTestScripts\\test_Data_Loading.py:41: Failed\n\n------------------------------ Captured log setup ------------------------------\nINFO     conftest:conftest.py:29 mysql conenction is getting established\nINFO     conftest:conftest.py:32 mysql conenction has been established\nINFO     conftest:conftest.py:39 mysql conenction is getting established\nINFO     conftest:conftest.py:42 mysql conenction has been established\n\n------------------------------ Captured log call -------------------------------\nINFO     TestScripts.test_Data_Loading:test_Data_Loading.py:34 Test case execution for fact_sales_check check has started....\nINFO     CommonUtils.utils:utils.py:141 The expected data in the file is :    sales_id   sale_date  price  quantity  total_sales  product_id        product_name  store_id   store_name\n0         48  2024-10-18   27.0         3         81.0         108    Philips Hue Bulb         1      Walmart\n1         27  2024-09-27   19.0        10        190.0         107      Samsung 55&amp;quot; TV         1      Walmart\n2         21  2024-09-21   15.5        14        217.0         101           iPhone 15         1      Walmart\n3         49  2024-10-19   18.5        11        203.5         109     Fitbit Charge 5         2       Target\n4         25  2024-09-25   13.5        12        162.0         105     Sony WH-1000XM5         2       Target\n5         22  2024-09-22   22.0         8        176.0         102  Samsung Galaxy S23         2       Target\n6         50  2024-10-20   21.0        12        252.0         110   Kindle Paperwhite         3     Best Buy\n7         41  2024-10-11   15.0         5         75.0         101           iPhone 15         3     Best Buy\n8         26  2024-09-26   21.0         5        105.0         106       Nike Air Zoom         3     Best Buy\n9         23  2024-09-23   18.0         7        126.0         103         Dell XPS 13         3     Best Buy\n10        60  2024-09-10   17.0         9        153.0         110   Kindle Paperwhite         4       Costco\n11        42  2024-10-12   20.0         4         80.0         102  Samsung Galaxy S23         4       Costco\n12        35  2024-10-05   15.0         7        105.0         105     Sony WH-1000XM5         4       Costco\n13        31  2024-10-01   14.5        13        188.5         101           iPhone 15         4       Costco\n14        24  2024-09-24   25.0         6        150.0         104      MacBook Pro 14         4       Costco\n15        15  2024-09-15   11.0        12        132.0         105     Sony WH-1000XM5         4       Costco\n16        11  2024-09-11   14.0        15        210.0         101           iPhone 15         4       Costco\n17        10  2024-09-10   17.0         9        153.0         110   Kindle Paperwhite         4       Costco\n18        43  2024-10-13   19.0         9        171.0         103         Dell XPS 13         5   Home Depot\n19        36  2024-10-06   25.0         3         75.0         106       Nike Air Zoom         5   Home Depot\n20        32  2024-10-02   29.0         6        174.0         102  Samsung Galaxy S23         5   Home Depot\n21        28  2024-09-28   27.0         6        162.0         108    Philips Hue Bulb         5   Home Depot\n22        16  2024-09-16   23.0         5        115.0         106       Nike Air Zoom         5   Home Depot\n23        12  2024-09-12   27.0         9        243.0         102  Samsung Galaxy S23         5   Home Depot\n24        44  2024-10-14   28.0         7        196.0         104      MacBook Pro 14         6       Lowe&amp;#x27;s\n25        37  2024-10-07   18.0        12        216.0         107      Samsung 55&amp;quot; TV         6       Lowe&amp;#x27;s\n26        33  2024-10-03   21.0         8        168.0         103         Dell XPS 13         6       Lowe&amp;#x27;s\n27        29  2024-09-29   24.0         9        216.0         109     Fitbit Charge 5         6       Lowe&amp;#x27;s\n28        17  2024-09-17   26.0         3         78.0         107      Samsung 55&amp;quot; TV         6       Lowe&amp;#x27;s\n29        13  2024-09-13   22.0        10        220.0         103         Dell XPS 13         6       Lowe&amp;#x27;s\n30        45  2024-10-15   25.0        10        250.0         105     Sony WH-1000XM5         7  Apple Store\n31        38  2024-10-08   20.0         9        180.0         108    Philips Hue Bulb         7  Apple Store\n32        34  2024-10-04   30.0         5        150.0         104      MacBook Pro 14         7  Apple Store\n33        30  2024-09-30   23.5         7        164.5         110   Kindle Paperwhite         7  Apple Store\n34        18  2024-09-18   28.0         6        168.0         108    Philips Hue Bulb         7  Apple Store\n35        14  2024-09-14   31.0         8        248.0         104      MacBook Pro 14         7  Apple Store\n36        46  2024-10-16   22.5         8        180.0         106       Nike Air Zoom         8         IKEA\n37        39  2024-10-09   22.0        10        220.0         109     Fitbit Charge 5         8         IKEA\n38        19  2024-09-19   20.0        11        220.0         109     Fitbit Charge 5         8         IKEA\n39        47  2024-10-17   24.0         6        144.0         107      Samsung 55&amp;quot; TV         9    Walgreens\n40        40  2024-10-10   26.0         6        156.0         110   Kindle Paperwhite         9    Walgreens\n41        20  2024-09-20   19.5         9        175.5         110   Kindle Paperwhite         9    Walgreens\nINFO     CommonUtils.utils:utils.py:143 The actual data in the file is :    sales_id  product_id  store_id  quantity  total_sales   sale_date\n0         10         110         4         9        153.0  2024-09-10\n1         11         101         4        15        210.0  2024-09-11\n2         12         102         5         9        243.0  2024-09-12\n3         13         103         6        10        220.0  2024-09-13\n4         14         104         7         8        248.0  2024-09-14\n5         15         105         4        12        132.0  2024-09-15\n6         16         106         5         5        115.0  2024-09-16\n7         17         107         6         3         78.0  2024-09-17\n8         18         108         7         6        168.0  2024-09-18\n9         19         109         8        11        220.0  2024-09-19\n10        20         110         9         9        175.5  2024-09-20\n11        21         101         1        14        217.0  2024-09-21\n12        22         102         2         8        176.0  2024-09-22\n13        23         103         3         7        126.0  2024-09-23\n14        24         104         4         6        150.0  2024-09-24\n15        25         105         2        12        162.0  2024-09-25\n16        26         106         3         5        105.0  2024-09-26\n17        27         107         1        10        190.0  2024-09-27\n18        28         108         5         6        162.0  2024-09-28\n19        29         109         6         9        216.0  2024-09-29\n20        30         110         7         7        164.5  2024-09-30\n21        31         101         4        13        188.5  2024-10-01\n22        32         102         5         6        174.0  2024-10-02\n23        33         103         6         8        168.0  2024-10-03\n24        34         104         7         5        150.0  2024-10-04\n25        35         105         4         7        105.0  2024-10-05\n26        36         106         5         3         75.0  2024-10-06\n27        37         107         6        12        216.0  2024-10-07\n28        38         108         7         9        180.0  2024-10-08\n29        39         109         8        10        220.0  2024-10-09\n30        40         110         9         6        156.0  2024-10-10\n31        41         101         3         5         75.0  2024-10-11\n32        42         102         4         4         80.0  2024-10-12\n33        43         103         5         9        171.0  2024-10-13\n34        44         104         6         7        196.0  2024-10-14\n35        45         105         7        10        250.0  2024-10-15\n36        46         106         8         8        180.0  2024-10-16\n37        47         107         9         6        144.0  2024-10-17\n38        48         108         1         3         81.0  2024-10-18\n39        49         109         2        11        203.5  2024-10-19\n40        50         110         3        12        252.0  2024-10-20\n41        60         110         4         9        153.0  2024-09-10\nERROR    TestScripts.test_Data_Loading:test_Data_Loading.py:40 test case Execution for fact_sales_check has failedexpected data from query select * from sales_with_details does not match the actual data from query select * from fact_sales\n\n---------------------------- Captured log teardown -----------------------------\nINFO     conftest:conftest.py:45 mysql conenction has been closed\nINFO     conftest:conftest.py:35 mysql conenction has been closed&#34;}], &#34;TestScripts/test_Data_Loading.py::test_DataLoad_for_fact_inventory_check&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;TestScripts/test_Data_Loading.py::test_DataLoad_for_fact_inventory_check&#34;, &#34;duration&#34;: &#34;71 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;TestScripts/test_Data_Loading.py::test_DataLoad_for_fact_inventory_check&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;71 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;connect_to_mysql_database_staging = &amp;lt;sqlalchemy.engine.base.Connection object at 0x0000025FCA479BA0&amp;gt;\nconnect_to_mysql_database_target = &amp;lt;sqlalchemy.engine.base.Connection object at 0x0000025FCA5FA9E0&amp;gt;\n\n    @pytest.mark.smoke\n    @pytest.mark.regression\n    def test_DataLoad_for_fact_inventory_check(connect_to_mysql_database_staging,connect_to_mysql_database_target):\n        logger.info(f&amp;quot;Test case execution for fact_inventory_check check has started....&amp;quot;)\n        try:\n            query_expected = &amp;quot;&amp;quot;&amp;quot;select * from staging_inventory&amp;quot;&amp;quot;&amp;quot;\n            query_actual = &amp;quot;&amp;quot;&amp;quot;select * from fact_inventory&amp;quot;&amp;quot;&amp;quot;\n&amp;gt;           verify_expected_db_data_vs_actual_db_data(query_expected,connect_to_mysql_database_staging,query_actual,connect_to_mysql_database_target)\n\nTestScripts\\test_Data_Loading.py:52: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nquery_expected = &amp;#x27;select * from staging_inventory&amp;#x27;\ndb_engine_expected = &amp;lt;sqlalchemy.engine.base.Connection object at 0x0000025FCA479BA0&amp;gt;, query_actual = &amp;#x27;select * from fact_inventory&amp;#x27;\ndb_engine_actual = &amp;lt;sqlalchemy.engine.base.Connection object at 0x0000025FCA5FA9E0&amp;gt;\n\n    def verify_expected_db_data_vs_actual_db_data(query_expected,db_engine_expected,query_actual,db_engine_actual):\n        df_expected = pd.read_sql(query_expected, db_engine_expected)\n        logger.info(f&amp;quot;The expected data in the file is :{df_expected}&amp;quot;)\n        df_actual = pd.read_sql(query_actual,db_engine_actual)\n        logger.info(f&amp;quot;The actual data in the file is :{df_actual}&amp;quot;)\n&amp;gt;       assert df_actual.equals(df_expected),f&amp;quot;expected data from query {query_expected} does not match the actual data from query {query_actual}&amp;quot;\nE       AssertionError: expected data from query select * from staging_inventory does not match the actual data from query select * from fact_inventory\n\nCommonUtils\\utils.py:144: AssertionError\n\nDuring handling of the above exception, another exception occurred:\n\nconnect_to_mysql_database_staging = &amp;lt;sqlalchemy.engine.base.Connection object at 0x0000025FCA479BA0&amp;gt;\nconnect_to_mysql_database_target = &amp;lt;sqlalchemy.engine.base.Connection object at 0x0000025FCA5FA9E0&amp;gt;\n\n    @pytest.mark.smoke\n    @pytest.mark.regression\n    def test_DataLoad_for_fact_inventory_check(connect_to_mysql_database_staging,connect_to_mysql_database_target):\n        logger.info(f&amp;quot;Test case execution for fact_inventory_check check has started....&amp;quot;)\n        try:\n            query_expected = &amp;quot;&amp;quot;&amp;quot;select * from staging_inventory&amp;quot;&amp;quot;&amp;quot;\n            query_actual = &amp;quot;&amp;quot;&amp;quot;select * from fact_inventory&amp;quot;&amp;quot;&amp;quot;\n            verify_expected_db_data_vs_actual_db_data(query_expected,connect_to_mysql_database_staging,query_actual,connect_to_mysql_database_target)\n        except Exception as e:\n            logger.error(f&amp;quot;test case Execution for fact_inventory_check has failed{e}&amp;quot;)\n&amp;gt;           pytest.fail(&amp;quot;test case Execution for fact_inventory_check has failed&amp;quot;)\nE           Failed: test case Execution for fact_inventory_check has failed\n\nTestScripts\\test_Data_Loading.py:55: Failed\n\n------------------------------ Captured log setup ------------------------------\nINFO     conftest:conftest.py:29 mysql conenction is getting established\nINFO     conftest:conftest.py:32 mysql conenction has been established\nINFO     conftest:conftest.py:39 mysql conenction is getting established\nINFO     conftest:conftest.py:42 mysql conenction has been established\n\n------------------------------ Captured log call -------------------------------\nINFO     TestScripts.test_Data_Loading:test_Data_Loading.py:48 Test case execution for fact_inventory_check check has started....\nINFO     CommonUtils.utils:utils.py:141 The expected data in the file is :    product_id  store_id  quantity_on_hand last_updated\n0          101         1                50   2024-09-01\n1          102         1                30   2024-09-02\n2          103         2                40   2024-09-03\n3          106         3                25   2024-09-06\n4          107         1                35   2024-09-07\n5          108         2                45   2024-09-08\n6          109         3                55   2024-09-09\n7          110         3                65   2024-09-10\n8          101         4                50   2024-09-11\n9          102         4                40   2024-09-12\n10         103         5                30   2024-09-13\n11         104         5                20   2024-09-14\n12         105         6                50   2024-09-15\n13         106         6                60   2024-09-16\n14         107         7                30   2024-09-17\n15         108         7                40   2024-09-18\n16         109         8                45   2024-09-19\n17         110         8                55   2024-09-20\n18         101         9                65   2024-09-21\n19         102         9                75   2024-09-22\n20         103        10                80   2024-09-23\n21         104        10                90   2024-09-24\n22         106         2               110   2024-09-26\n23         107         3               120   2024-09-27\n24         108         4               130   2024-09-28\n25         109         5               140   2024-09-29\n26         110         6               150   2024-09-30\n27         101         7               160   2024-10-01\n28         102         8               170   2024-10-02\n29         103         9               180   2024-10-03\nINFO     CommonUtils.utils:utils.py:143 The actual data in the file is :    product_id  store_id  quantity_on_hand last_updated\n0          101         1                50   2024-09-01\n1          101         4                50   2024-09-11\n2          101         7               160   2024-10-01\n3          101         9                65   2024-09-21\n4          102         1                30   2024-09-02\n5          102         4                40   2024-09-12\n6          102         8               170   2024-10-02\n7          102         9                75   2024-09-22\n8          103         2                40   2024-09-03\n9          103         5                30   2024-09-13\n10         103         9               180   2024-10-03\n11         103        10                80   2024-09-23\n12         104         5                20   2024-09-14\n13         104        10                90   2024-09-24\n14         105         6                50   2024-09-15\n15         106         2               110   2024-09-26\n16         106         3                25   2024-09-06\n17         106         6                60   2024-09-16\n18         107         1                35   2024-09-07\n19         107         3               120   2024-09-27\n20         107         7                30   2024-09-17\n21         108         2                45   2024-09-08\n22         108         4               130   2024-09-28\n23         108         7                40   2024-09-18\n24         109         3                55   2024-09-09\n25         109         5               140   2024-09-29\n26         109         8                45   2024-09-19\n27         110         3                65   2024-09-10\n28         110         6               150   2024-09-30\n29         110         8                55   2024-09-20\nERROR    TestScripts.test_Data_Loading:test_Data_Loading.py:54 test case Execution for fact_inventory_check has failedexpected data from query select * from staging_inventory does not match the actual data from query select * from fact_inventory\n\n---------------------------- Captured log teardown -----------------------------\nINFO     conftest:conftest.py:45 mysql conenction has been closed\nINFO     conftest:conftest.py:35 mysql conenction has been closed&#34;}], &#34;TestScripts/test_Data_Quality.py::test_DataQuality_supplier_data_file_availability&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;TestScripts/test_Data_Quality.py::test_DataQuality_supplier_data_file_availability&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;TestScripts/test_Data_Quality.py::test_DataQuality_supplier_data_file_availability&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log call -------------------------------\nINFO     TestScripts.test_Data_Quality:test_Data_Quality.py:21 Test case execution fil availability check initiated....\nINFO     TestScripts.test_Data_Quality:test_Data_Quality.py:27 Test case execution fil availability check  has completed....\n\n&#34;}], &#34;TestScripts/test_Data_Transformation.py::test_DataTransformation_Filter_check&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;TestScripts/test_Data_Transformation.py::test_DataTransformation_Filter_check&#34;, &#34;duration&#34;: &#34;64 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;TestScripts/test_Data_Transformation.py::test_DataTransformation_Filter_check&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;64 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log setup ------------------------------\nINFO     conftest:conftest.py:29 mysql conenction is getting established\nINFO     conftest:conftest.py:32 mysql conenction has been established\n\n------------------------------ Captured log call -------------------------------\nINFO     TestScripts.test_Data_Transformation:test_Data_Transformation.py:21 Test case execution for Filter has started....\nINFO     CommonUtils.utils:utils.py:141 The expected data in the file is :    sales_id  product_id  store_id  quantity  price   sale_date region\n0         10         110         4         9   17.0  2024-09-10    Low\n1         11         101         4        15   14.0  2024-09-11   High\n2         12         102         5         9   27.0  2024-09-12    Low\n3         13         103         6        10   22.0  2024-09-13   High\n4         14         104         7         8   31.0  2024-09-14    Low\n5         15         105         4        12   11.0  2024-09-15   High\n6         16         106         5         5   23.0  2024-09-16    Low\n7         17         107         6         3   26.0  2024-09-17   High\n8         18         108         7         6   28.0  2024-09-18    Low\n9         19         109         8        11   20.0  2024-09-19   High\n10        20         110         9         9   19.5  2024-09-20    Low\n11        21         101         1        14   15.5  2024-09-21   High\n12        22         102         2         8   22.0  2024-09-22    Low\n13        23         103         3         7   18.0  2024-09-23   High\n14        24         104         4         6   25.0  2024-09-24    Low\n15        25         105         2        12   13.5  2024-09-25   High\n16        26         106         3         5   21.0  2024-09-26    Low\n17        27         107         1        10   19.0  2024-09-27   High\n18        28         108         5         6   27.0  2024-09-28    Low\n19        29         109         6         9   24.0  2024-09-29   High\n20        30         110         7         7   23.5  2024-09-30    Low\n21        31         101         4        13   14.5  2024-10-01   High\n22        32         102         5         6   29.0  2024-10-02    Low\n23        33         103         6         8   21.0  2024-10-03   High\n24        34         104         7         5   30.0  2024-10-04    Low\n25        35         105         4         7   15.0  2024-10-05   High\n26        36         106         5         3   25.0  2024-10-06    Low\n27        37         107         6        12   18.0  2024-10-07   High\n28        38         108         7         9   20.0  2024-10-08    Low\n29        39         109         8        10   22.0  2024-10-09   High\n30        40         110         9         6   26.0  2024-10-10    Low\n31        41         101         3         5   15.0  2024-10-11   High\n32        42         102         4         4   20.0  2024-10-12    Low\n33        43         103         5         9   19.0  2024-10-13   High\n34        44         104         6         7   28.0  2024-10-14    Low\n35        45         105         7        10   25.0  2024-10-15   High\n36        46         106         8         8   22.5  2024-10-16    Low\n37        47         107         9         6   24.0  2024-10-17   High\n38        48         108         1         3   27.0  2024-10-18    Low\n39        49         109         2        11   18.5  2024-10-19   High\n40        50         110         3        12   21.0  2024-10-20    Low\n41        60         110         4         9   17.0  2024-09-10    Low\nINFO     CommonUtils.utils:utils.py:143 The actual data in the file is :    sales_id  product_id  store_id  quantity  price   sale_date region\n0         10         110         4         9   17.0  2024-09-10    Low\n1         11         101         4        15   14.0  2024-09-11   High\n2         12         102         5         9   27.0  2024-09-12    Low\n3         13         103         6        10   22.0  2024-09-13   High\n4         14         104         7         8   31.0  2024-09-14    Low\n5         15         105         4        12   11.0  2024-09-15   High\n6         16         106         5         5   23.0  2024-09-16    Low\n7         17         107         6         3   26.0  2024-09-17   High\n8         18         108         7         6   28.0  2024-09-18    Low\n9         19         109         8        11   20.0  2024-09-19   High\n10        20         110         9         9   19.5  2024-09-20    Low\n11        21         101         1        14   15.5  2024-09-21   High\n12        22         102         2         8   22.0  2024-09-22    Low\n13        23         103         3         7   18.0  2024-09-23   High\n14        24         104         4         6   25.0  2024-09-24    Low\n15        25         105         2        12   13.5  2024-09-25   High\n16        26         106         3         5   21.0  2024-09-26    Low\n17        27         107         1        10   19.0  2024-09-27   High\n18        28         108         5         6   27.0  2024-09-28    Low\n19        29         109         6         9   24.0  2024-09-29   High\n20        30         110         7         7   23.5  2024-09-30    Low\n21        31         101         4        13   14.5  2024-10-01   High\n22        32         102         5         6   29.0  2024-10-02    Low\n23        33         103         6         8   21.0  2024-10-03   High\n24        34         104         7         5   30.0  2024-10-04    Low\n25        35         105         4         7   15.0  2024-10-05   High\n26        36         106         5         3   25.0  2024-10-06    Low\n27        37         107         6        12   18.0  2024-10-07   High\n28        38         108         7         9   20.0  2024-10-08    Low\n29        39         109         8        10   22.0  2024-10-09   High\n30        40         110         9         6   26.0  2024-10-10    Low\n31        41         101         3         5   15.0  2024-10-11   High\n32        42         102         4         4   20.0  2024-10-12    Low\n33        43         103         5         9   19.0  2024-10-13   High\n34        44         104         6         7   28.0  2024-10-14    Low\n35        45         105         7        10   25.0  2024-10-15   High\n36        46         106         8         8   22.5  2024-10-16    Low\n37        47         107         9         6   24.0  2024-10-17   High\n38        48         108         1         3   27.0  2024-10-18    Low\n39        49         109         2        11   18.5  2024-10-19   High\n40        50         110         3        12   21.0  2024-10-20    Low\n41        60         110         4         9   17.0  2024-09-10    Low\nINFO     TestScripts.test_Data_Transformation:test_Data_Transformation.py:30 Test case execution for Filter check has completed....\n\n---------------------------- Captured log teardown -----------------------------\nINFO     conftest:conftest.py:35 mysql conenction has been closed&#34;}], &#34;TestScripts/test_Data_Transformation.py::test_DataTransformation_Router_High_check&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;TestScripts/test_Data_Transformation.py::test_DataTransformation_Router_High_check&#34;, &#34;duration&#34;: &#34;69 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;TestScripts/test_Data_Transformation.py::test_DataTransformation_Router_High_check&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;69 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log setup ------------------------------\nINFO     conftest:conftest.py:29 mysql conenction is getting established\nINFO     conftest:conftest.py:32 mysql conenction has been established\n\n------------------------------ Captured log call -------------------------------\nINFO     TestScripts.test_Data_Transformation:test_Data_Transformation.py:35 Test case execution for Router High check has started....\nINFO     CommonUtils.utils:utils.py:141 The expected data in the file is :    sales_id  product_id  store_id  quantity  price   sale_date region\n0         11         101         4        15   14.0  2024-09-11   High\n1         13         103         6        10   22.0  2024-09-13   High\n2         15         105         4        12   11.0  2024-09-15   High\n3         17         107         6         3   26.0  2024-09-17   High\n4         19         109         8        11   20.0  2024-09-19   High\n5         21         101         1        14   15.5  2024-09-21   High\n6         23         103         3         7   18.0  2024-09-23   High\n7         25         105         2        12   13.5  2024-09-25   High\n8         27         107         1        10   19.0  2024-09-27   High\n9         29         109         6         9   24.0  2024-09-29   High\n10        31         101         4        13   14.5  2024-10-01   High\n11        33         103         6         8   21.0  2024-10-03   High\n12        35         105         4         7   15.0  2024-10-05   High\n13        37         107         6        12   18.0  2024-10-07   High\n14        39         109         8        10   22.0  2024-10-09   High\n15        41         101         3         5   15.0  2024-10-11   High\n16        43         103         5         9   19.0  2024-10-13   High\n17        45         105         7        10   25.0  2024-10-15   High\n18        47         107         9         6   24.0  2024-10-17   High\n19        49         109         2        11   18.5  2024-10-19   High\nINFO     CommonUtils.utils:utils.py:143 The actual data in the file is :    sales_id  product_id  store_id  quantity  price   sale_date region\n0         11         101         4        15   14.0  2024-09-11   High\n1         13         103         6        10   22.0  2024-09-13   High\n2         15         105         4        12   11.0  2024-09-15   High\n3         17         107         6         3   26.0  2024-09-17   High\n4         19         109         8        11   20.0  2024-09-19   High\n5         21         101         1        14   15.5  2024-09-21   High\n6         23         103         3         7   18.0  2024-09-23   High\n7         25         105         2        12   13.5  2024-09-25   High\n8         27         107         1        10   19.0  2024-09-27   High\n9         29         109         6         9   24.0  2024-09-29   High\n10        31         101         4        13   14.5  2024-10-01   High\n11        33         103         6         8   21.0  2024-10-03   High\n12        35         105         4         7   15.0  2024-10-05   High\n13        37         107         6        12   18.0  2024-10-07   High\n14        39         109         8        10   22.0  2024-10-09   High\n15        41         101         3         5   15.0  2024-10-11   High\n16        43         103         5         9   19.0  2024-10-13   High\n17        45         105         7        10   25.0  2024-10-15   High\n18        47         107         9         6   24.0  2024-10-17   High\n19        49         109         2        11   18.5  2024-10-19   High\nINFO     TestScripts.test_Data_Transformation:test_Data_Transformation.py:45 Test case execution for  Router High check has completed....\n\n---------------------------- Captured log teardown -----------------------------\nINFO     conftest:conftest.py:35 mysql conenction has been closed&#34;}], &#34;TestScripts/test_Data_Transformation.py::test_DataTransformation_Router_Low_check&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;TestScripts/test_Data_Transformation.py::test_DataTransformation_Router_Low_check&#34;, &#34;duration&#34;: &#34;57 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;TestScripts/test_Data_Transformation.py::test_DataTransformation_Router_Low_check&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;57 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log setup ------------------------------\nINFO     conftest:conftest.py:29 mysql conenction is getting established\nINFO     conftest:conftest.py:32 mysql conenction has been established\n\n------------------------------ Captured log call -------------------------------\nINFO     TestScripts.test_Data_Transformation:test_Data_Transformation.py:50 Test case execution for Router Low check has started....\nINFO     CommonUtils.utils:utils.py:141 The expected data in the file is :    sales_id  product_id  store_id  quantity  price   sale_date region\n0         10         110         4         9   17.0  2024-09-10    Low\n1         12         102         5         9   27.0  2024-09-12    Low\n2         14         104         7         8   31.0  2024-09-14    Low\n3         16         106         5         5   23.0  2024-09-16    Low\n4         18         108         7         6   28.0  2024-09-18    Low\n5         20         110         9         9   19.5  2024-09-20    Low\n6         22         102         2         8   22.0  2024-09-22    Low\n7         24         104         4         6   25.0  2024-09-24    Low\n8         26         106         3         5   21.0  2024-09-26    Low\n9         28         108         5         6   27.0  2024-09-28    Low\n10        30         110         7         7   23.5  2024-09-30    Low\n11        32         102         5         6   29.0  2024-10-02    Low\n12        34         104         7         5   30.0  2024-10-04    Low\n13        36         106         5         3   25.0  2024-10-06    Low\n14        38         108         7         9   20.0  2024-10-08    Low\n15        40         110         9         6   26.0  2024-10-10    Low\n16        42         102         4         4   20.0  2024-10-12    Low\n17        44         104         6         7   28.0  2024-10-14    Low\n18        46         106         8         8   22.5  2024-10-16    Low\n19        48         108         1         3   27.0  2024-10-18    Low\n20        50         110         3        12   21.0  2024-10-20    Low\n21        60         110         4         9   17.0  2024-09-10    Low\nINFO     CommonUtils.utils:utils.py:143 The actual data in the file is :    sales_id  product_id  store_id  quantity  price   sale_date region\n0         10         110         4         9   17.0  2024-09-10    Low\n1         12         102         5         9   27.0  2024-09-12    Low\n2         14         104         7         8   31.0  2024-09-14    Low\n3         16         106         5         5   23.0  2024-09-16    Low\n4         18         108         7         6   28.0  2024-09-18    Low\n5         20         110         9         9   19.5  2024-09-20    Low\n6         22         102         2         8   22.0  2024-09-22    Low\n7         24         104         4         6   25.0  2024-09-24    Low\n8         26         106         3         5   21.0  2024-09-26    Low\n9         28         108         5         6   27.0  2024-09-28    Low\n10        30         110         7         7   23.5  2024-09-30    Low\n11        32         102         5         6   29.0  2024-10-02    Low\n12        34         104         7         5   30.0  2024-10-04    Low\n13        36         106         5         3   25.0  2024-10-06    Low\n14        38         108         7         9   20.0  2024-10-08    Low\n15        40         110         9         6   26.0  2024-10-10    Low\n16        42         102         4         4   20.0  2024-10-12    Low\n17        44         104         6         7   28.0  2024-10-14    Low\n18        46         106         8         8   22.5  2024-10-16    Low\n19        48         108         1         3   27.0  2024-10-18    Low\n20        50         110         3        12   21.0  2024-10-20    Low\n21        60         110         4         9   17.0  2024-09-10    Low\nINFO     TestScripts.test_Data_Transformation:test_Data_Transformation.py:60 Test case execution for  Router Low check has completed....\n\n---------------------------- Captured log teardown -----------------------------\nINFO     conftest:conftest.py:35 mysql conenction has been closed&#34;}], &#34;TestScripts/test_Data_Transformation.py::test_DataTransformation_Aggregator_Sales_data_check&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;TestScripts/test_Data_Transformation.py::test_DataTransformation_Aggregator_Sales_data_check&#34;, &#34;duration&#34;: &#34;56 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;TestScripts/test_Data_Transformation.py::test_DataTransformation_Aggregator_Sales_data_check&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;56 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log setup ------------------------------\nINFO     conftest:conftest.py:29 mysql conenction is getting established\nINFO     conftest:conftest.py:32 mysql conenction has been established\n\n------------------------------ Captured log call -------------------------------\nINFO     TestScripts.test_Data_Transformation:test_Data_Transformation.py:65 Test case execution for Aggregator_Sales_data_check has started....\nINFO     CommonUtils.utils:utils.py:141 The expected data in the file is :    product_id  month  year  total_sales\n0          101      9  2024        427.0\n1          101     10  2024        263.5\n2          102      9  2024        419.0\n3          102     10  2024        254.0\n4          103      9  2024        346.0\n5          103     10  2024        339.0\n6          104      9  2024        398.0\n7          104     10  2024        346.0\n8          105      9  2024        294.0\n9          105     10  2024        355.0\n10         106      9  2024        220.0\n11         106     10  2024        255.0\n12         107      9  2024        268.0\n13         107     10  2024        360.0\n14         108      9  2024        330.0\n15         108     10  2024        261.0\n16         109      9  2024        436.0\n17         109     10  2024        423.5\n18         110      9  2024        646.0\n19         110     10  2024        408.0\nINFO     CommonUtils.utils:utils.py:143 The actual data in the file is :    product_id  month  year  total_sales\n0          101      9  2024        427.0\n1          101     10  2024        263.5\n2          102      9  2024        419.0\n3          102     10  2024        254.0\n4          103      9  2024        346.0\n5          103     10  2024        339.0\n6          104      9  2024        398.0\n7          104     10  2024        346.0\n8          105      9  2024        294.0\n9          105     10  2024        355.0\n10         106      9  2024        220.0\n11         106     10  2024        255.0\n12         107      9  2024        268.0\n13         107     10  2024        360.0\n14         108      9  2024        330.0\n15         108     10  2024        261.0\n16         109      9  2024        436.0\n17         109     10  2024        423.5\n18         110      9  2024        646.0\n19         110     10  2024        408.0\nINFO     TestScripts.test_Data_Transformation:test_Data_Transformation.py:78 Test case execution for  Aggregator_Sales_data_check  has completed....\n\n---------------------------- Captured log teardown -----------------------------\nINFO     conftest:conftest.py:35 mysql conenction has been closed&#34;}], &#34;TestScripts/test_Data_Transformation.py::test_DataTransformation_Aggregator_inventory_level_data_check&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;TestScripts/test_Data_Transformation.py::test_DataTransformation_Aggregator_inventory_level_data_check&#34;, &#34;duration&#34;: &#34;54 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;TestScripts/test_Data_Transformation.py::test_DataTransformation_Aggregator_inventory_level_data_check&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;54 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log setup ------------------------------\nINFO     conftest:conftest.py:29 mysql conenction is getting established\nINFO     conftest:conftest.py:32 mysql conenction has been established\n\n------------------------------ Captured log call -------------------------------\nINFO     TestScripts.test_Data_Transformation:test_Data_Transformation.py:83 Test case execution for Aggregator_inventory_level_data_check has started....\nINFO     CommonUtils.utils:utils.py:141 The expected data in the file is :   store_id  total_inventory\n0         1            115.0\n1         2            195.0\n2         3            265.0\n3         4            220.0\n4         5            190.0\n5         6            260.0\n6         7            230.0\n7         8            270.0\n8         9            320.0\n9        10            170.0\nINFO     CommonUtils.utils:utils.py:143 The actual data in the file is :   store_id  total_inventory\n0         1            115.0\n1         2            195.0\n2         3            265.0\n3         4            220.0\n4         5            190.0\n5         6            260.0\n6         7            230.0\n7         8            270.0\n8         9            320.0\n9        10            170.0\nINFO     TestScripts.test_Data_Transformation:test_Data_Transformation.py:92 Test case execution for  Aggregator_inventory_level_data_check  has completed....\n\n---------------------------- Captured log teardown -----------------------------\nINFO     conftest:conftest.py:35 mysql conenction has been closed&#34;}], &#34;TestScripts/test_Data_Transformation.py::test_DataTransformation_Joiner_sales_products_stores_data_check&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;TestScripts/test_Data_Transformation.py::test_DataTransformation_Joiner_sales_products_stores_data_check&#34;, &#34;duration&#34;: &#34;94 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;TestScripts/test_Data_Transformation.py::test_DataTransformation_Joiner_sales_products_stores_data_check&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;94 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;------------------------------ Captured log setup ------------------------------\nINFO     conftest:conftest.py:29 mysql conenction is getting established\nINFO     conftest:conftest.py:32 mysql conenction has been established\n\n------------------------------ Captured log call -------------------------------\nINFO     TestScripts.test_Data_Transformation:test_Data_Transformation.py:98 Test case execution for Joiner_sales_products_stores_data_check has started....\nINFO     CommonUtils.utils:utils.py:141 The expected data in the file is :    sales_id   sale_date  price  quantity  total_sales  product_id        product_name  store_id   store_name\n0         48  2024-10-18   27.0         3         81.0         108    Philips Hue Bulb         1      Walmart\n1         27  2024-09-27   19.0        10        190.0         107      Samsung 55&amp;quot; TV         1      Walmart\n2         21  2024-09-21   15.5        14        217.0         101           iPhone 15         1      Walmart\n3         49  2024-10-19   18.5        11        203.5         109     Fitbit Charge 5         2       Target\n4         25  2024-09-25   13.5        12        162.0         105     Sony WH-1000XM5         2       Target\n5         22  2024-09-22   22.0         8        176.0         102  Samsung Galaxy S23         2       Target\n6         50  2024-10-20   21.0        12        252.0         110   Kindle Paperwhite         3     Best Buy\n7         41  2024-10-11   15.0         5         75.0         101           iPhone 15         3     Best Buy\n8         26  2024-09-26   21.0         5        105.0         106       Nike Air Zoom         3     Best Buy\n9         23  2024-09-23   18.0         7        126.0         103         Dell XPS 13         3     Best Buy\n10        60  2024-09-10   17.0         9        153.0         110   Kindle Paperwhite         4       Costco\n11        42  2024-10-12   20.0         4         80.0         102  Samsung Galaxy S23         4       Costco\n12        35  2024-10-05   15.0         7        105.0         105     Sony WH-1000XM5         4       Costco\n13        31  2024-10-01   14.5        13        188.5         101           iPhone 15         4       Costco\n14        24  2024-09-24   25.0         6        150.0         104      MacBook Pro 14         4       Costco\n15        15  2024-09-15   11.0        12        132.0         105     Sony WH-1000XM5         4       Costco\n16        11  2024-09-11   14.0        15        210.0         101           iPhone 15         4       Costco\n17        10  2024-09-10   17.0         9        153.0         110   Kindle Paperwhite         4       Costco\n18        43  2024-10-13   19.0         9        171.0         103         Dell XPS 13         5   Home Depot\n19        36  2024-10-06   25.0         3         75.0         106       Nike Air Zoom         5   Home Depot\n20        32  2024-10-02   29.0         6        174.0         102  Samsung Galaxy S23         5   Home Depot\n21        28  2024-09-28   27.0         6        162.0         108    Philips Hue Bulb         5   Home Depot\n22        16  2024-09-16   23.0         5        115.0         106       Nike Air Zoom         5   Home Depot\n23        12  2024-09-12   27.0         9        243.0         102  Samsung Galaxy S23         5   Home Depot\n24        44  2024-10-14   28.0         7        196.0         104      MacBook Pro 14         6       Lowe&amp;#x27;s\n25        37  2024-10-07   18.0        12        216.0         107      Samsung 55&amp;quot; TV         6       Lowe&amp;#x27;s\n26        33  2024-10-03   21.0         8        168.0         103         Dell XPS 13         6       Lowe&amp;#x27;s\n27        29  2024-09-29   24.0         9        216.0         109     Fitbit Charge 5         6       Lowe&amp;#x27;s\n28        17  2024-09-17   26.0         3         78.0         107      Samsung 55&amp;quot; TV         6       Lowe&amp;#x27;s\n29        13  2024-09-13   22.0        10        220.0         103         Dell XPS 13         6       Lowe&amp;#x27;s\n30        45  2024-10-15   25.0        10        250.0         105     Sony WH-1000XM5         7  Apple Store\n31        38  2024-10-08   20.0         9        180.0         108    Philips Hue Bulb         7  Apple Store\n32        34  2024-10-04   30.0         5        150.0         104      MacBook Pro 14         7  Apple Store\n33        30  2024-09-30   23.5         7        164.5         110   Kindle Paperwhite         7  Apple Store\n34        18  2024-09-18   28.0         6        168.0         108    Philips Hue Bulb         7  Apple Store\n35        14  2024-09-14   31.0         8        248.0         104      MacBook Pro 14         7  Apple Store\n36        46  2024-10-16   22.5         8        180.0         106       Nike Air Zoom         8         IKEA\n37        39  2024-10-09   22.0        10        220.0         109     Fitbit Charge 5         8         IKEA\n38        19  2024-09-19   20.0        11        220.0         109     Fitbit Charge 5         8         IKEA\n39        47  2024-10-17   24.0         6        144.0         107      Samsung 55&amp;quot; TV         9    Walgreens\n40        40  2024-10-10   26.0         6        156.0         110   Kindle Paperwhite         9    Walgreens\n41        20  2024-09-20   19.5         9        175.5         110   Kindle Paperwhite         9    Walgreens\nINFO     CommonUtils.utils:utils.py:143 The actual data in the file is :    sales_id   sale_date  price  quantity  total_sales  product_id        product_name  store_id   store_name\n0         48  2024-10-18   27.0         3         81.0         108    Philips Hue Bulb         1      Walmart\n1         27  2024-09-27   19.0        10        190.0         107      Samsung 55&amp;quot; TV         1      Walmart\n2         21  2024-09-21   15.5        14        217.0         101           iPhone 15         1      Walmart\n3         49  2024-10-19   18.5        11        203.5         109     Fitbit Charge 5         2       Target\n4         25  2024-09-25   13.5        12        162.0         105     Sony WH-1000XM5         2       Target\n5         22  2024-09-22   22.0         8        176.0         102  Samsung Galaxy S23         2       Target\n6         50  2024-10-20   21.0        12        252.0         110   Kindle Paperwhite         3     Best Buy\n7         41  2024-10-11   15.0         5         75.0         101           iPhone 15         3     Best Buy\n8         26  2024-09-26   21.0         5        105.0         106       Nike Air Zoom         3     Best Buy\n9         23  2024-09-23   18.0         7        126.0         103         Dell XPS 13         3     Best Buy\n10        60  2024-09-10   17.0         9        153.0         110   Kindle Paperwhite         4       Costco\n11        42  2024-10-12   20.0         4         80.0         102  Samsung Galaxy S23         4       Costco\n12        35  2024-10-05   15.0         7        105.0         105     Sony WH-1000XM5         4       Costco\n13        31  2024-10-01   14.5        13        188.5         101           iPhone 15         4       Costco\n14        24  2024-09-24   25.0         6        150.0         104      MacBook Pro 14         4       Costco\n15        15  2024-09-15   11.0        12        132.0         105     Sony WH-1000XM5         4       Costco\n16        11  2024-09-11   14.0        15        210.0         101           iPhone 15         4       Costco\n17        10  2024-09-10   17.0         9        153.0         110   Kindle Paperwhite         4       Costco\n18        43  2024-10-13   19.0         9        171.0         103         Dell XPS 13         5   Home Depot\n19        36  2024-10-06   25.0         3         75.0         106       Nike Air Zoom         5   Home Depot\n20        32  2024-10-02   29.0         6        174.0         102  Samsung Galaxy S23         5   Home Depot\n21        28  2024-09-28   27.0         6        162.0         108    Philips Hue Bulb         5   Home Depot\n22        16  2024-09-16   23.0         5        115.0         106       Nike Air Zoom         5   Home Depot\n23        12  2024-09-12   27.0         9        243.0         102  Samsung Galaxy S23         5   Home Depot\n24        44  2024-10-14   28.0         7        196.0         104      MacBook Pro 14         6       Lowe&amp;#x27;s\n25        37  2024-10-07   18.0        12        216.0         107      Samsung 55&amp;quot; TV         6       Lowe&amp;#x27;s\n26        33  2024-10-03   21.0         8        168.0         103         Dell XPS 13         6       Lowe&amp;#x27;s\n27        29  2024-09-29   24.0         9        216.0         109     Fitbit Charge 5         6       Lowe&amp;#x27;s\n28        17  2024-09-17   26.0         3         78.0         107      Samsung 55&amp;quot; TV         6       Lowe&amp;#x27;s\n29        13  2024-09-13   22.0        10        220.0         103         Dell XPS 13         6       Lowe&amp;#x27;s\n30        45  2024-10-15   25.0        10        250.0         105     Sony WH-1000XM5         7  Apple Store\n31        38  2024-10-08   20.0         9        180.0         108    Philips Hue Bulb         7  Apple Store\n32        34  2024-10-04   30.0         5        150.0         104      MacBook Pro 14         7  Apple Store\n33        30  2024-09-30   23.5         7        164.5         110   Kindle Paperwhite         7  Apple Store\n34        18  2024-09-18   28.0         6        168.0         108    Philips Hue Bulb         7  Apple Store\n35        14  2024-09-14   31.0         8        248.0         104      MacBook Pro 14         7  Apple Store\n36        46  2024-10-16   22.5         8        180.0         106       Nike Air Zoom         8         IKEA\n37        39  2024-10-09   22.0        10        220.0         109     Fitbit Charge 5         8         IKEA\n38        19  2024-09-19   20.0        11        220.0         109     Fitbit Charge 5         8         IKEA\n39        47  2024-10-17   24.0         6        144.0         107      Samsung 55&amp;quot; TV         9    Walgreens\n40        40  2024-10-10   26.0         6        156.0         110   Kindle Paperwhite         9    Walgreens\n41        20  2024-09-20   19.5         9        175.5         110   Kindle Paperwhite         9    Walgreens\nINFO     TestScripts.test_Data_Transformation:test_Data_Transformation.py:113 Test case execution for  Joiner_sales_products_stores_data_check  has completed....\n\n---------------------------- Captured log teardown -----------------------------\nINFO     conftest:conftest.py:35 mysql conenction has been closed&#34;}]}, &#34;renderCollapsed&#34;: [&#34;passed&#34;], &#34;initialSort&#34;: &#34;result&#34;, &#34;title&#34;: &#34;ExecutionRpt.html&#34;}"></div>
+    <script>
+      (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+const { getCollapsedCategory, setCollapsedIds } = require('./storage.js')
+
+class DataManager {
+    setManager(data) {
+        const collapsedCategories = [...getCollapsedCategory(data.renderCollapsed)]
+        const collapsedIds = []
+        const tests = Object.values(data.tests).flat().map((test, index) => {
+            const collapsed = collapsedCategories.includes(test.result.toLowerCase())
+            const id = `test_${index}`
+            if (collapsed) {
+                collapsedIds.push(id)
+            }
+            return {
+                ...test,
+                id,
+                collapsed,
+            }
+        })
+        const dataBlob = { ...data, tests }
+        this.data = { ...dataBlob }
+        this.renderData = { ...dataBlob }
+        setCollapsedIds(collapsedIds)
+    }
+
+    get allData() {
+        return { ...this.data }
+    }
+
+    resetRender() {
+        this.renderData = { ...this.data }
+    }
+
+    setRender(data) {
+        this.renderData.tests = [...data]
+    }
+
+    toggleCollapsedItem(id) {
+        this.renderData.tests = this.renderData.tests.map((test) =>
+            test.id === id ? { ...test, collapsed: !test.collapsed } : test,
+        )
+    }
+
+    set allCollapsed(collapsed) {
+        this.renderData = { ...this.renderData, tests: [...this.renderData.tests.map((test) => (
+            { ...test, collapsed }
+        ))] }
+    }
+
+    get testSubset() {
+        return [...this.renderData.tests]
+    }
+
+    get environment() {
+        return this.renderData.environment
+    }
+
+    get initialSort() {
+        return this.data.initialSort
+    }
+}
+
+module.exports = {
+    manager: new DataManager(),
+}
+
+},{"./storage.js":8}],2:[function(require,module,exports){
+const mediaViewer = require('./mediaviewer.js')
+const templateEnvRow = document.getElementById('template_environment_row')
+const templateResult = document.getElementById('template_results-table__tbody')
+
+function htmlToElements(html) {
+    const temp = document.createElement('template')
+    temp.innerHTML = html
+    return temp.content.childNodes
+}
+
+const find = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return elem.querySelector(selector)
+}
+
+const findAll = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return [...elem.querySelectorAll(selector)]
+}
+
+const dom = {
+    getStaticRow: (key, value) => {
+        const envRow = templateEnvRow.content.cloneNode(true)
+        const isObj = typeof value === 'object' && value !== null
+        const values = isObj ? Object.keys(value).map((k) => `${k}: ${value[k]}`) : null
+
+        const valuesElement = htmlToElements(
+            values ? `<ul>${values.map((val) => `<li>${val}</li>`).join('')}<ul>` : `<div>${value}</div>`)[0]
+        const td = findAll('td', envRow)
+        td[0].textContent = key
+        td[1].appendChild(valuesElement)
+
+        return envRow
+    },
+    getResultTBody: ({ testId, id, log, extras, resultsTableRow, tableHtml, result, collapsed }) => {
+        const resultBody = templateResult.content.cloneNode(true)
+        resultBody.querySelector('tbody').classList.add(result.toLowerCase())
+        resultBody.querySelector('tbody').id = testId
+        resultBody.querySelector('.collapsible').dataset.id = id
+
+        resultsTableRow.forEach((html) => {
+            const t = document.createElement('template')
+            t.innerHTML = html
+            resultBody.querySelector('.collapsible').appendChild(t.content)
+        })
+
+        if (log) {
+            // Wrap lines starting with "E" with span.error to color those lines red
+            const wrappedLog = log.replace(/^E.*$/gm, (match) => `<span class="error">${match}</span>`)
+            resultBody.querySelector('.log').innerHTML = wrappedLog
+        } else {
+            resultBody.querySelector('.log').remove()
+        }
+
+        if (collapsed) {
+            resultBody.querySelector('.collapsible > td')?.classList.add('collapsed')
+            resultBody.querySelector('.extras-row').classList.add('hidden')
+        } else {
+            resultBody.querySelector('.collapsible > td')?.classList.remove('collapsed')
+        }
+
+        const media = []
+        extras?.forEach(({ name, format_type, content }) => {
+            if (['image', 'video'].includes(format_type)) {
+                media.push({ path: content, name, format_type })
+            }
+
+            if (format_type === 'html') {
+                resultBody.querySelector('.extraHTML').insertAdjacentHTML('beforeend', `<div>${content}</div>`)
+            }
+        })
+        mediaViewer.setup(resultBody, media)
+
+        // Add custom html from the pytest_html_results_table_html hook
+        tableHtml?.forEach((item) => {
+            resultBody.querySelector('td[class="extra"]').insertAdjacentHTML('beforeend', item)
+        })
+
+        return resultBody
+    },
+}
+
+module.exports = {
+    dom,
+    htmlToElements,
+    find,
+    findAll,
+}
+
+},{"./mediaviewer.js":6}],3:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const storageModule = require('./storage.js')
+
+const getFilteredSubSet = (filter) =>
+    manager.allData.tests.filter(({ result }) => filter.includes(result.toLowerCase()))
+
+const doInitFilter = () => {
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+}
+
+const doFilter = (type, show) => {
+    if (show) {
+        storageModule.showCategory(type)
+    } else {
+        storageModule.hideCategory(type)
+    }
+
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+
+    const sortColumn = storageModule.getSort()
+    doSort(sortColumn, true)
+}
+
+module.exports = {
+    doFilter,
+    doInitFilter,
+}
+
+},{"./datamanager.js":1,"./sort.js":7,"./storage.js":8}],4:[function(require,module,exports){
+const { redraw, bindEvents, renderStatic } = require('./main.js')
+const { doInitFilter } = require('./filter.js')
+const { doInitSort } = require('./sort.js')
+const { manager } = require('./datamanager.js')
+const data = JSON.parse(document.getElementById('data-container').dataset.jsonblob)
+
+function init() {
+    manager.setManager(data)
+    doInitFilter()
+    doInitSort()
+    renderStatic()
+    redraw()
+    bindEvents()
+}
+
+init()
+
+},{"./datamanager.js":1,"./filter.js":3,"./main.js":5,"./sort.js":7}],5:[function(require,module,exports){
+const { dom, find, findAll } = require('./dom.js')
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const { doFilter } = require('./filter.js')
+const {
+    getVisible,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    getSortDirection,
+    possibleFilters,
+} = require('./storage.js')
+
+const removeChildren = (node) => {
+    while (node.firstChild) {
+        node.removeChild(node.firstChild)
+    }
+}
+
+const renderStatic = () => {
+    const renderEnvironmentTable = () => {
+        const environment = manager.environment
+        const rows = Object.keys(environment).map((key) => dom.getStaticRow(key, environment[key]))
+        const table = document.getElementById('environment')
+        removeChildren(table)
+        rows.forEach((row) => table.appendChild(row))
+    }
+    renderEnvironmentTable()
+}
+
+const addItemToggleListener = (elem) => {
+    elem.addEventListener('click', ({ target }) => {
+        const id = target.parentElement.dataset.id
+        manager.toggleCollapsedItem(id)
+
+        const collapsedIds = getCollapsedIds()
+        if (collapsedIds.includes(id)) {
+            const updated = collapsedIds.filter((item) => item !== id)
+            setCollapsedIds(updated)
+        } else {
+            collapsedIds.push(id)
+            setCollapsedIds(collapsedIds)
+        }
+        redraw()
+    })
+}
+
+const renderContent = (tests) => {
+    const sortAttr = getSort(manager.initialSort)
+    const sortAsc = JSON.parse(getSortDirection())
+    const rows = tests.map(dom.getResultTBody)
+    const table = document.getElementById('results-table')
+    const tableHeader = document.getElementById('results-table-head')
+
+    const newTable = document.createElement('table')
+    newTable.id = 'results-table'
+
+    // remove all sorting classes and set the relevant
+    findAll('.sortable', tableHeader).forEach((elem) => elem.classList.remove('asc', 'desc'))
+    tableHeader.querySelector(`.sortable[data-column-type="${sortAttr}"]`)?.classList.add(sortAsc ? 'desc' : 'asc')
+    newTable.appendChild(tableHeader)
+
+    if (!rows.length) {
+        const emptyTable = document.getElementById('template_results-table__body--empty').content.cloneNode(true)
+        newTable.appendChild(emptyTable)
+    } else {
+        rows.forEach((row) => {
+            if (!!row) {
+                findAll('.collapsible td:not(.col-links', row).forEach(addItemToggleListener)
+                find('.logexpander', row).addEventListener('click',
+                    (evt) => evt.target.parentNode.classList.toggle('expanded'),
+                )
+                newTable.appendChild(row)
+            }
+        })
+    }
+
+    table.replaceWith(newTable)
+}
+
+const renderDerived = () => {
+    const currentFilter = getVisible()
+    possibleFilters.forEach((result) => {
+        const input = document.querySelector(`input[data-test-result="${result}"]`)
+        input.checked = currentFilter.includes(result)
+    })
+}
+
+const bindEvents = () => {
+    const filterColumn = (evt) => {
+        const { target: element } = evt
+        const { testResult } = element.dataset
+
+        doFilter(testResult, element.checked)
+        const collapsedIds = getCollapsedIds()
+        const updated = manager.renderData.tests.map((test) => {
+            return {
+                ...test,
+                collapsed: collapsedIds.includes(test.id),
+            }
+        })
+        manager.setRender(updated)
+        redraw()
+    }
+
+    const header = document.getElementById('environment-header')
+    header.addEventListener('click', () => {
+        const table = document.getElementById('environment')
+        table.classList.toggle('hidden')
+        header.classList.toggle('collapsed')
+    })
+
+    findAll('input[name="filter_checkbox"]').forEach((elem) => {
+        elem.addEventListener('click', filterColumn)
+    })
+
+    findAll('.sortable').forEach((elem) => {
+        elem.addEventListener('click', (evt) => {
+            const { target: element } = evt
+            const { columnType } = element.dataset
+            doSort(columnType)
+            redraw()
+        })
+    })
+
+    document.getElementById('show_all_details').addEventListener('click', () => {
+        manager.allCollapsed = false
+        setCollapsedIds([])
+        redraw()
+    })
+    document.getElementById('hide_all_details').addEventListener('click', () => {
+        manager.allCollapsed = true
+        const allIds = manager.renderData.tests.map((test) => test.id)
+        setCollapsedIds(allIds)
+        redraw()
+    })
+}
+
+const redraw = () => {
+    const { testSubset } = manager
+
+    renderContent(testSubset)
+    renderDerived()
+}
+
+module.exports = {
+    redraw,
+    bindEvents,
+    renderStatic,
+}
+
+},{"./datamanager.js":1,"./dom.js":2,"./filter.js":3,"./sort.js":7,"./storage.js":8}],6:[function(require,module,exports){
+class MediaViewer {
+    constructor(assets) {
+        this.assets = assets
+        this.index = 0
+    }
+
+    nextActive() {
+        this.index = this.index === this.assets.length - 1 ? 0 : this.index + 1
+        return [this.activeFile, this.index]
+    }
+
+    prevActive() {
+        this.index = this.index === 0 ? this.assets.length - 1 : this.index -1
+        return [this.activeFile, this.index]
+    }
+
+    get currentIndex() {
+        return this.index
+    }
+
+    get activeFile() {
+        return this.assets[this.index]
+    }
+}
+
+
+const setup = (resultBody, assets) => {
+    if (!assets.length) {
+        resultBody.querySelector('.media').classList.add('hidden')
+        return
+    }
+
+    const mediaViewer = new MediaViewer(assets)
+    const container = resultBody.querySelector('.media-container')
+    const leftArrow = resultBody.querySelector('.media-container__nav--left')
+    const rightArrow = resultBody.querySelector('.media-container__nav--right')
+    const mediaName = resultBody.querySelector('.media__name')
+    const counter = resultBody.querySelector('.media__counter')
+    const imageEl = resultBody.querySelector('img')
+    const sourceEl = resultBody.querySelector('source')
+    const videoEl = resultBody.querySelector('video')
+
+    const setImg = (media, index) => {
+        if (media?.format_type === 'image') {
+            imageEl.src = media.path
+
+            imageEl.classList.remove('hidden')
+            videoEl.classList.add('hidden')
+        } else if (media?.format_type === 'video') {
+            sourceEl.src = media.path
+
+            videoEl.classList.remove('hidden')
+            imageEl.classList.add('hidden')
+        }
+
+        mediaName.innerText = media?.name
+        counter.innerText = `${index + 1} / ${assets.length}`
+    }
+    setImg(mediaViewer.activeFile, mediaViewer.currentIndex)
+
+    const moveLeft = () => {
+        const [media, index] = mediaViewer.prevActive()
+        setImg(media, index)
+    }
+    const doRight = () => {
+        const [media, index] = mediaViewer.nextActive()
+        setImg(media, index)
+    }
+    const openImg = () => {
+        window.open(mediaViewer.activeFile.path, '_blank')
+    }
+    if (assets.length === 1) {
+        container.classList.add('media-container--fullscreen')
+    } else {
+        leftArrow.addEventListener('click', moveLeft)
+        rightArrow.addEventListener('click', doRight)
+    }
+    imageEl.addEventListener('click', openImg)
+}
+
+module.exports = {
+    setup,
+}
+
+},{}],7:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const storageModule = require('./storage.js')
+
+const genericSort = (list, key, ascending, customOrder) => {
+    let sorted
+    if (customOrder) {
+        sorted = list.sort((a, b) => {
+            const aValue = a.result.toLowerCase()
+            const bValue = b.result.toLowerCase()
+
+            const aIndex = customOrder.findIndex((item) => item.toLowerCase() === aValue)
+            const bIndex = customOrder.findIndex((item) => item.toLowerCase() === bValue)
+
+            // Compare the indices to determine the sort order
+            return aIndex - bIndex
+        })
+    } else {
+        sorted = list.sort((a, b) => a[key] === b[key] ? 0 : a[key] > b[key] ? 1 : -1)
+    }
+
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const durationSort = (list, ascending) => {
+    const parseDuration = (duration) => {
+        if (duration.includes(':')) {
+            // If it's in the format "HH:mm:ss"
+            const [hours, minutes, seconds] = duration.split(':').map(Number)
+            return (hours * 3600 + minutes * 60 + seconds) * 1000
+        } else {
+            // If it's in the format "nnn ms"
+            return parseInt(duration)
+        }
+    }
+    const sorted = list.sort((a, b) => parseDuration(a['duration']) - parseDuration(b['duration']))
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const doInitSort = () => {
+    const type = storageModule.getSort(manager.initialSort)
+    const ascending = storageModule.getSortDirection()
+    const list = manager.testSubset
+    const initialOrder = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed', 'Skipped', 'Passed']
+
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    if (type?.toLowerCase() === 'original') {
+        manager.setRender(list)
+    } else {
+        let sortedList
+        switch (type) {
+        case 'duration':
+            sortedList = durationSort(list, ascending)
+            break
+        case 'result':
+            sortedList = genericSort(list, type, ascending, initialOrder)
+            break
+        default:
+            sortedList = genericSort(list, type, ascending)
+            break
+        }
+        manager.setRender(sortedList)
+    }
+}
+
+const doSort = (type, skipDirection) => {
+    const newSortType = storageModule.getSort(manager.initialSort) !== type
+    const currentAsc = storageModule.getSortDirection()
+    let ascending
+    if (skipDirection) {
+        ascending = currentAsc
+    } else {
+        ascending = newSortType ? false : !currentAsc
+    }
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    const list = manager.testSubset
+    const sortedList = type === 'duration' ? durationSort(list, ascending) : genericSort(list, type, ascending)
+    manager.setRender(sortedList)
+}
+
+module.exports = {
+    doInitSort,
+    doSort,
+}
+
+},{"./datamanager.js":1,"./storage.js":8}],8:[function(require,module,exports){
+const possibleFilters = [
+    'passed',
+    'skipped',
+    'failed',
+    'error',
+    'xfailed',
+    'xpassed',
+    'rerun',
+]
+
+const getVisible = () => {
+    const url = new URL(window.location.href)
+    const settings = new URLSearchParams(url.search).get('visible')
+    const lower = (item) => {
+        const lowerItem = item.toLowerCase()
+        if (possibleFilters.includes(lowerItem)) {
+            return lowerItem
+        }
+        return null
+    }
+    return settings === null ?
+        possibleFilters :
+        [...new Set(settings?.split(',').map(lower).filter((item) => item))]
+}
+
+const hideCategory = (categoryToHide) => {
+    const url = new URL(window.location.href)
+    const visibleParams = new URLSearchParams(url.search).get('visible')
+    const currentVisible = visibleParams ? visibleParams.split(',') : [...possibleFilters]
+    const settings = [...new Set(currentVisible)].filter((f) => f !== categoryToHide).join(',')
+
+    url.searchParams.set('visible', settings)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const showCategory = (categoryToShow) => {
+    if (typeof window === 'undefined') {
+        return
+    }
+    const url = new URL(window.location.href)
+    const currentVisible = new URLSearchParams(url.search).get('visible')?.split(',').filter(Boolean) ||
+        [...possibleFilters]
+    const settings = [...new Set([categoryToShow, ...currentVisible])]
+    const noFilter = possibleFilters.length === settings.length || !settings.length
+
+    noFilter ? url.searchParams.delete('visible') : url.searchParams.set('visible', settings.join(','))
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getSort = (initialSort) => {
+    const url = new URL(window.location.href)
+    let sort = new URLSearchParams(url.search).get('sort')
+    if (!sort) {
+        sort = initialSort || 'result'
+    }
+    return sort
+}
+
+const setSort = (type) => {
+    const url = new URL(window.location.href)
+    url.searchParams.set('sort', type)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getCollapsedCategory = (renderCollapsed) => {
+    let categories
+    if (typeof window !== 'undefined') {
+        const url = new URL(window.location.href)
+        const collapsedItems = new URLSearchParams(url.search).get('collapsed')
+        switch (true) {
+        case !renderCollapsed && collapsedItems === null:
+            categories = ['passed']
+            break
+        case collapsedItems?.length === 0 || /^["']{2}$/.test(collapsedItems):
+            categories = []
+            break
+        case /^all$/.test(collapsedItems) || collapsedItems === null && /^all$/.test(renderCollapsed):
+            categories = [...possibleFilters]
+            break
+        default:
+            categories = collapsedItems?.split(',').map((item) => item.toLowerCase()) || renderCollapsed
+            break
+        }
+    } else {
+        categories = []
+    }
+    return categories
+}
+
+const getSortDirection = () => JSON.parse(sessionStorage.getItem('sortAsc')) || false
+const setSortDirection = (ascending) => sessionStorage.setItem('sortAsc', ascending)
+
+const getCollapsedIds = () => JSON.parse(sessionStorage.getItem('collapsedIds')) || []
+const setCollapsedIds = (list) => sessionStorage.setItem('collapsedIds', JSON.stringify(list))
+
+module.exports = {
+    getVisible,
+    hideCategory,
+    showCategory,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    setSort,
+    getSortDirection,
+    setSortDirection,
+    getCollapsedCategory,
+    possibleFilters,
+}
+
+},{}]},{},[4]);
+    </script>
+  </footer>
+</html>

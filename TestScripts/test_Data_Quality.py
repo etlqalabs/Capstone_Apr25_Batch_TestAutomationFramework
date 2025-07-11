@@ -15,7 +15,8 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-
+@pytest.mark.smoke
+@pytest.mark.regression
 def test_DataQuality_supplier_data_file_availability():
     logger.info(f"Test case execution fil availability check initiated....")
     try:
