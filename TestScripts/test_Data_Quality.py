@@ -15,7 +15,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-@pytest.mark.skip
+
 @pytest.mark.smoke
 @pytest.mark.regression
 def test_DataQuality_supplier_data_file_availability():
@@ -27,10 +27,32 @@ def test_DataQuality_supplier_data_file_availability():
         pytest.fail("Test case execution fil availability check  has failed")
     logger.info(f"Test case execution fil availability check  has completed....")
 
+@pytest.mark.smoke
+@pytest.mark.regression
+def test_DataQuality_inventory_data_file_availability():
+    logger.info(f"Test case for inventory availability check initiated....")
+    try:
+       assert check_file_exists("TestData/inventory_data.xml"),"File doen not exist in the location"
+    except Exception as e:
+        logger.error(f"Error while checking the file existance {e}")
+        pytest.fail("Test case for inventory file availability check  has failed")
+    logger.info(f"Test case for inventory file availability check has completed....")
+
+@pytest.mark.smoke
+@pytest.mark.regression
+def test_DataQuality_sales_data_file_availability():
+    logger.info(f"Test case for sales availability check initiated....")
+    try:
+       assert check_file_exists("TestData/sales_data_Linux_remote.csv"),"File doen not exist in the location"
+    except Exception as e:
+        logger.error(f"Error while checking the file existance {e}")
+        pytest.fail("Test case for inventory file availability check  has failed")
+    logger.info(f"Test case for sales file availability check has completed....")
+
+
 
 ## Test case to check the refertial integrrity
-
-def test_referentialIntegrity_src_staging_tgt_mysql(connect_to_mysql_database_staging,connect_to_mysql_database_target):
+def test_referentialIntegrity_store_id_between_staging_target(connect_to_mysql_database_staging,connect_to_mysql_database_target):
     query_expected = """select store_id from staging_stores order by store_id"""
     df_expected = pd.read_sql(query_expected,connect_to_mysql_database_staging)
     query_actual = """select store_id from fact_sales order by store_id"""
@@ -39,6 +61,31 @@ def test_referentialIntegrity_src_staging_tgt_mysql(connect_to_mysql_database_st
     df_all_matched = df_actual[df_actual['store_id'].isin(df_expected['store_id'])]
     df_not_macthed = df_actual[~df_actual['store_id'].isin(df_expected['store_id'])]
     print(df_not_macthed)
-    df_not_macthed.to_csv("LogFiles/notmatchingdata.csv",index=False)
+    df_not_macthed.to_csv("LogFiles/notmatchingdata_stores_data.csv",index=False)
     assert df_not_macthed.empty,"There is extra store_id in target vs source/stag"
+
+def test_referentialIntegrity_sales_id_between_staging_target(connect_to_mysql_database_staging,connect_to_mysql_database_target):
+    query_expected = """select sales_id from staging_sales order by sales_id"""
+    df_expected = pd.read_sql(query_expected,connect_to_mysql_database_staging)
+    query_actual = """select sales_id from fact_sales order by sales_id"""
+    df_actual= pd.read_sql(query_actual, connect_to_mysql_database_target)
+
+    df_all_matched = df_actual[df_actual['sales_id'].isin(df_expected['sales_id'])]
+    df_not_macthed = df_actual[~df_actual['sales_id'].isin(df_expected['sales_id'])]
+    print(df_not_macthed)
+    df_not_macthed.to_csv("LogFiles/notmatchingdata_sales_data.csv",index=False)
+    assert df_not_macthed.empty,"There is extra sales_id in target vs source/stag"
+
+def test_referentialIntegrity_product_id_between_staging_target(connect_to_mysql_database_staging,connect_to_mysql_database_target):
+    query_expected = """select product_id from staging_product order by product_id"""
+    df_expected = pd.read_sql(query_expected,connect_to_mysql_database_staging)
+    query_actual = """select product_id from fact_sales order by product_id"""
+    df_actual= pd.read_sql(query_actual, connect_to_mysql_database_target)
+
+    df_all_matched = df_actual[df_actual['product_id'].isin(df_expected['product_id'])]
+    df_not_macthed = df_actual[~df_actual['product_id'].isin(df_expected['product_id'])]
+    print(df_not_macthed)
+    df_not_macthed.to_csv("LogFiles/notmatchingdata_product_data.csv",index=False)
+    assert df_not_macthed.empty,"There is extra product_ids in target vs source/stag"
+
 
