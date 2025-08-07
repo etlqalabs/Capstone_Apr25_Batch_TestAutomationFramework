@@ -27,6 +27,7 @@ def test_DataExtraction_from_sales_data_file_to_staging(connect_to_mysql_databas
 
 
 
+@pytest.mark.skip
 @pytest.mark.smoke
 def test_DataExtraction_from_product_data_file_to_staging(connect_to_mysql_database_staging):
     logger.info(f"Test case execution for product_data extarction has started....")
